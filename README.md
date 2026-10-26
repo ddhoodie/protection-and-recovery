@@ -85,13 +85,13 @@ Prvi čas je izuzetak. Svih 24 pojma nastala su u jednom prolasku i čine jednu 
 
 ## Tok časa
 
-Čas ima tri prezenterа. Svako izlaže oko 10 pojmova, do 20 minuta. Zajedno pokrivaju jednu smislenu celinu tog dana, ne tri nepovezane liste.
+Čas ima tri prezentera. Svako izlaže oko 10 pojmova, do 20 minuta. Zajedno pokrivaju jednu smislenu celinu tog dana, ne tri nepovezane liste.
 
-PR za bazu stoji 48 sati pre časa, da urednici i lovci stignu da ga prođu. 
+PR za bazu stoji 48 sati pre časa, da urednici i lovci stignu da ga prođu.
 
 1. Prezenter prođe svoje pojmove kroz skill, ili preuzme već napisane beleške ako je prolazak već urađen.
 2. Otvori PR. U njemu su markdown beleške, ne prezentacija.
-3. Urednik i lovac pročitaju PR pre časa.
+3. Urednik i lovac pročitaju PR pre časa. Urednik idealno već tada ukaže na probleme (npr. preklapanja definicija ili termina), da prezenter stigne da ispravi beleške pre izlaganja.
 4. Na času prezenter izlaže. Urednik kaže šta mora da se ispravi da bi se PR integrisao. Lovac imenuje rupe. Naivni pitalac postavlja pitanja, a PR nije gledao.
 5. Posle časa ispravke ulaze u iste beleške, na istu granu. Skill ne menja bazu dok to student ne potvrdi, pa urednik ne prepravlja tuđi fajl umesto prezentera. Kad su ispravke unutra, PR se spaja u `main`.
 
@@ -99,7 +99,7 @@ PR za bazu stoji 48 sati pre časa, da urednici i lovci stignu da ga prođu.
 
 ### Prezenter (P)
 
-Pre časa napravi ili preuzme svojih oko 10 pojmova i dostavi PR 48 sati ranije. Na času ih izloži za najviše 20 minuta, tako da se sa druga dva prezenterа pokrije celina tog dana. Posle časa unese dogovorene ispravke u beleške i time zatvori PR.
+Pre časa napravi ili preuzme svojih oko 10 pojmova i dostavi PR 48 sati ranije. Na času ih izloži za najviše 20 minuta, tako da se sa druga dva prezentera pokrije celina tog dana. Posle časa unese dogovorene ispravke u beleške i time zatvori PR.
 
 Prezentaciju pravi kako hoće. Nju ne šalje na git.
 
@@ -107,7 +107,7 @@ Za ovaj prvi čas skill je već odrađen: 24 beleške stoje u `claude/pojmovi/`.
 
 ### Urednik (U)
 
-Pre časa čita PR tekućih prezentera i već spojene pojmove sa ranijih časova. Gleda da li se definicije slažu: isti termin u dva značenja, cirkularna definicija, primer koji protivreči kontekstu, pojam koji se raspada jer je susedni pojam kasnije promenjen.
+Pre časa čita PR tekućih prezentera i već spojene pojmove sa ranijih časova. Gleda da li se definicije slažu: isti termin u dva značenja, cirkularna definicija, primer koji protivreči kontekstu, pojam koji se raspada jer je susedni pojam kasnije promenjen. Idealno već tada, u komentarima na PR-u, ukaže na probleme — naročito preklapanja — da prezenter stigne da ispravi pre časa.
 
 Na času proverava da li je izlaganje isto što i beleška. Kaže šta tačno treba ispraviti da bi se PR integrisao. Ne spaja PR pre tog razgovora i ne uvodi tiho svoju formulaciju.
 
