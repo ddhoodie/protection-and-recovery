@@ -2,36 +2,33 @@ I deo — Osnove distribuiranih sistema i otkaza
 
 Celina 1 — Struktura distribuiranog sistema — Uroš Đošić
 1. Distribuirani sistem
-2. Aplikativni servis
+2. Aplikativni sistem
 3. Servisna instanca
 4. Perzistentni sloj
-5. Računarski resursi i aplikativni servisi
-6. Zavisnosti servisa
+5. Računarski resurs
+6. Zavisnost servisa
 7. Graf zavisnosti
-8. Međuzavisni tokovi
-9. Poslovni tok kroz više servisa i baza
+8. Poslovni tok kroz više servisa i baza
 Celina uvodi tri nivoa posmatranja: perzistentni sloj, aplikativne servise i poslovne tokove koji ih povezuju.
 Celina 2 — Priroda otkaza u distribuiranom sistemu — Stefan Nikolić
 1. Otkaz komponente distribuiranog sistema
 2. Delimični otkaz
-3. Potpuni pad sistema
-4. Jedinstvena tačka otkaza (SPOF)
+3. Potpuni otkaz sistema
+4. Jedinstvena tačka otkaza
 5. Pad procesa
 6. Usporavanje servisa
 7. Prekid mreže
-8. Razlika između otkaza komponente i pada celog sistema
-9. Širenje otkaza kroz graf zavisnosti
+8. Širenje otkaza kroz graf zavisnosti
 Celina postavlja osnovni model otkaza i pokazuje zašto distribuirani sistem može nastaviti da radi iako su pojedini njegovi delovi neispravni.
 Celina 3 — Ciljevi i mere oporavka — Viktor Srbljin
-1. Cilj vremena oporavka (RTO)
-2. Cilj tačke oporavka (RPO)
-3. Razlika između RTO i RPO
-4. Merenje RTO i RPO u istom scenariju otkaza
-5. Vreme do ponovne dostupnosti servisa
-6. Procenat uspešnih zahteva tokom otkaza
-7. Broj tokova u nekonzistentnom stanju
-8. Broj tokova u zaglavljenom stanju
-9. Ukupno vreme oporavka sistema
+1. Ciljno vreme oporavka
+2. Ciljna tačka oporavka
+3. Zajedničko merenje ostvarenja RTO i RPO
+4. Vreme do ponovne dostupnosti servisa
+5. Procenat uspešnih zahteva tokom otkaza
+6. Broj tokova u nekonzistentnom stanju
+7. Broj tokova u zaglavljenom stanju
+8. Ukupno vreme oporavka sistema
 Ova celina razdvaja oporavak servisa, oporavak podataka i oporavak poslovnih tokova.
 II deo — Otkrivanje otkaza
 Celina 4 — Opservabilnost i detekcija otkaza

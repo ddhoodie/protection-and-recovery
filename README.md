@@ -6,10 +6,13 @@ Baza se gradi skillom u `claude/SKILL.md`. Skill čita konfiguraciju, razgovara 
 
 Kvalitet baze meri se time koliko precizno njeni pojmovi omogućavaju da se opiše problem iz konfiguracije i projektuje rešenje.
 
+**Ko prezentuje koji pojam:** vidi [`trenutni_kostur.md`](trenutni_kostur.md). Tu je raspored celina po času i prezentoru, usklađen sa beleškama u `claude/pojmovi/`. Urednici i lovci tu gledaju ko šta izlaže; u `pojmovi/` same beleške nemaju oznaku prezentera.
+
 ## Mapa
 
 ```
 README.md                 ovo uputstvo
+trenutni_kostur.md        koje pojmove ko prezentuje, po celinama
 uloge_tim2.xlsx           ko je koja uloga na kom času
 claude/
   SKILL.md                uputstvo za model koji vodi izgradnju baze
