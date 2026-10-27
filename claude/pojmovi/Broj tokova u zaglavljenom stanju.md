@@ -11,7 +11,7 @@ Broj tokova u zaglavljenom stanju jeste broj jedinstvenih nezavršenih izvršenj
 
 ## Primer
 
-Posle kontrolisanog otkaza u primarnom cloud kontekstu, četiri izvršenja poslovnog toka ostanu u koraku koji čeka odgovor servisa B. Za taj korak je kao granica bez napretka utvrđeno pet minuta. Ako ni posle pet minuta nema odgovora, ponovnog pokušaja, prelaska na sledeći korak, poništavanja ni konačnog neuspeha, broj tokova u zaglavljenom stanju iznosi četiri.
+Posle kontrolisanog [[Delimični otkaz|otkaza]] u primarnom cloud kontekstu, četiri izvršenja poslovnog toka ostanu u koraku koji čeka odgovor servisa B. Za taj korak je kao granica bez napretka utvrđeno pet minuta. Ako ni posle pet minuta nema odgovora, ponovnog pokušaja, prelaska na sledeći korak, poništavanja ni konačnog neuspeha, broj tokova u zaglavljenom stanju iznosi četiri.
 
 ## Napomene
 

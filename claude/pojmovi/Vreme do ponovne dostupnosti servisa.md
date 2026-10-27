@@ -17,4 +17,4 @@ U primarnom cloud kontekstu, sve servisne instance jednog servisa postanu nedost
 
 Kriterijum uspeha mora da odredi posmatranu funkciju, prihvatljiv odgovor i, kada je potrebno, period tokom kojeg rezultat mora ostati stabilan. Bez tog kriterijuma isto tehničko stanje može se različito proglasiti dostupnim.
 
-Ova mera opisuje ostvareni rezultat konkretnog otkaza. [[Ciljno vreme oporavka|Ciljno vreme oporavka]] je unapred određena najveća prihvatljiva vrednost sa kojom se rezultat poredi. Ako redundansa potpuno prikrije otkaz jedne instance, vreme do ponovne dostupnosti funkcije servisa može biti nula iako zamena otkazale instance traje duže.
+Ova mera opisuje ostvareni rezultat konkretnog [[Delimični otkaz|otkaza]]. [[Ciljno vreme oporavka|Ciljno vreme oporavka]] je unapred određena najveća prihvatljiva vrednost sa kojom se rezultat poredi. Ako redundansa potpuno prikrije [[Delimični otkaz|otkaz]] jedne instance, vreme do ponovne dostupnosti funkcije servisa može biti nula iako zamena otkazale instance traje duže.

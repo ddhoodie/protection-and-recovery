@@ -11,7 +11,7 @@ Ciljna tačka oporavka (RPO) jeste najranija prihvatljiva tačka u vremenu pre p
 
 ## Primer
 
-U primarnom cloud kontekstu, primarni čvor replicirane baze otkaže u 12:00, a za podatke [[Poslovni tok kroz više servisa i baza|poslovnog toka kroz više servisa i baza]] utvrđen je RPO od pet minuta. Oporavak mora da vrati stanje iz 11:55 ili novije. Ako najnovije ispravno obnovljeno stanje sadrži promene zaključno sa 11:58, RPO je ispunjen; ako sadrži samo promene zaključno sa 11:52, nije ispunjen.
+U primarnom cloud kontekstu, primarni čvor replicirane baze otkaže u 12:00, a za podatke [[Poslovni tok kroz više servisa i baza|poslovnog toka kroz više servisa i baza]] utvrđen je RPO od pet minuta. Oporavak mora da vrati stanje iz 11:55 ili novije. Ako obnovljeno stanje iz 11:58 sadrži sve relevantne promene do te tačke, i ti podaci su ispravni, konzistentni i neoštećeni, RPO je ispunjen; ako obnovljeno stanje sadrži samo promene zaključno sa 11:52, nije ispunjen.
 
 ## Napomene
 
