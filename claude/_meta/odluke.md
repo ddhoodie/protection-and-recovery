@@ -24,6 +24,7 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - virtualizacija
 - izvršno okruženje
 - proces
+- funkcija
 
 ## Promene konvencija
 

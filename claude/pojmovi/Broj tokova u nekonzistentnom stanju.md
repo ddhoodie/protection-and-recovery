@@ -11,7 +11,7 @@ Broj tokova u nekonzistentnom stanju jeste broj jedinstvenih izvršenja [[Poslov
 
 ## Primer
 
-U primarnom cloud kontekstu, kontrolisani otkaz prekine 100 izvršenja poslovnog toka. Posle oporavka, sedam izvršenja ima zabeležen završen korak u bazi servisa A, dok odgovarajući obavezni korak u bazi servisa B nije ni završen ni poništen. Ako pravilo toka ne dozvoljava tu kombinaciju stanja, broj tokova u nekonzistentnom stanju iznosi sedam. Svako izvršenje broji se jednom, čak i kada krši više pravila.
+U primarnom cloud kontekstu, kontrolisani [[Delimični otkaz|otkaz]] prekine 100 izvršenja poslovnog toka. Posle oporavka, sedam izvršenja ima zabeležen završen korak u bazi servisa A, dok odgovarajući obavezni korak u bazi servisa B nije ni završen ni poništen. Ako pravilo toka ne dozvoljava tu kombinaciju stanja, broj tokova u nekonzistentnom stanju iznosi sedam. Svako izvršenje broji se jednom, čak i kada krši više pravila.
 
 ## Napomene
 
