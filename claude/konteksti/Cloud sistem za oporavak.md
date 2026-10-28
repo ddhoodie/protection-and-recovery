@@ -8,8 +8,8 @@ Cloud sistem služi kao zajednički kontekst za proučavanje delimičnih otkaza 
 
 ## Elementi
 
-- Više međuzavisnih aplikativnih servisa.
-- Više servisnih instanci iza balansera.
+- Više međuzavisnih [[Aplikativni servis|aplikativnih servisa]].
+- Više servisnih instanci iza balansera opterećenja.
 - Replicirana baza sa primarnim čvorom i replikama.
 - Poslovni tok koji prolazi kroz više servisa i baza.
 - Mehanizam za kontrolisano izazivanje otkaza.

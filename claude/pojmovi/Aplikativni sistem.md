@@ -11,7 +11,7 @@ Aplikativni sistem jeste povezana celina jedne ili više softverskih komponenti 
 
 ## Primer
 
-U primarnom cloud kontekstu, međuzavisni aplikativni servisi, njihove [[Servisna instanca|servisne instance]] i podaci u repliciranoj bazi zajedno čine aplikativni sistem zato što zajednički izvršavaju poslovni tok. Jedna servisna instanca nije ceo aplikativni sistem, već izvršna pojava jedne njegove komponente.
+U primarnom cloud kontekstu, međuzavisni [[Aplikativni servis|aplikativni servisi]], njihove [[Servisna instanca|servisne instance]] i podaci u repliciranoj bazi zajedno čine aplikativni sistem zato što zajednički izvršavaju poslovni tok. Jedna servisna instanca nije ceo aplikativni sistem, već izvršna pojava jedne njegove komponente.
 
 ## Napomene
 
