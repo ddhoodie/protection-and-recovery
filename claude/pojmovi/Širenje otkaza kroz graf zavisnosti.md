@@ -15,7 +15,7 @@ U primarnom cloud kontekstu, servis A zavisi od servisa B, a servis B od servisa
 
 ## Napomene
 
-Graf zavisnosti prikazuje moguće puteve širenja, ali sam ne dokazuje da će se otkaz tim putevima proširiti. Ishod zavisi od toga da li je zavisnost neophodna za posmatranu funkciju i da li zavisni servis može da upotrebi zamenski izvor, sačuvanu vrednost, odloženu obradu ili degradirani režim.
+Graf zavisnosti prikazuje moguće puteve širenja, ali sam ne dokazuje da će se otkaz tim putevima proširiti. Ishod zavisi od toga da li je zavisnost neophodna za posmatranu funkciju i da li zavisni servis može da upotrebi zamenski izvor, sačuvanu vrednost ili odloženu obradu, ili da nastavi rad u degradiranom režimu, u kojem pruža samo deo svojih funkcija ili ih pruža sa umanjenim kvalitetom.
 
 Ne širi se fizički događaj koji je izazvao početni otkaz, već njegov funkcionalni uticaj: nedostupnost, kašnjenje ili neispravan rezultat postaju problem za zavisnu komponentu. Kada se tako izazvani otkazi nastavljaju kroz više komponenti, nastaje lančani otkaz.
 

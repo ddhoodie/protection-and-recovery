@@ -24,6 +24,9 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - virtualizacija
 - izvršno okruženje
 - proces
+- balanser (load balancer)
+- funkcija
+- dostupnost
 
 ## Promene konvencija
 
