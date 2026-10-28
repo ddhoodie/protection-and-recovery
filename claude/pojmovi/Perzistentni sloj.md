@@ -11,7 +11,7 @@ Perzistentni sloj jeste deo aplikacije odgovoran za upisivanje, trajno čuvanje 
 
 ## Primer
 
-U primarnom cloud kontekstu, primarni čvor baze i njegove replike čine glavni deo perzistentnog sloja. Kada servisna instanca prestane da radi, podaci poslovnog toka ne smeju nestati zajedno sa njenim memorijskim stanjem, već se ponovo učitavaju iz baze. Kada otkaže primarni čvor baze, oporavak perzistentnog sloja zahteva da sačuvani podaci ponovo postanu dostupni i dovoljno ispravni za nastavak poslovnog toka.
+U primarnom cloud kontekstu, primarni čvor baze i njegove replike čine glavni deo perzistentnog sloja. Kada servisna instanca prestane da radi, podaci poslovnog toka ne smeju nestati zajedno sa njenim memorijskim stanjem, već se ponovo učitavaju iz baze. Kada primarni čvor baze doživi [[Otkaz komponente distribuiranog sistema|otkaz]], oporavak perzistentnog sloja zahteva da sačuvani podaci ponovo postanu dostupni i dovoljno ispravni za nastavak poslovnog toka.
 
 ## Napomene
 

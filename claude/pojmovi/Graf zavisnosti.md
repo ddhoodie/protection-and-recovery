@@ -7,11 +7,11 @@ izvor: "Amazon CloudWatch Application Signals API Reference, DependencyGraph, ht
 
 ## Definicija
 
-Graf zavisnosti jeste usmerena struktura u kojoj čvorovi predstavljaju aplikativne servise, a grana od jednog čvora ka drugom predstavlja [[Zavisnost servisa|zavisnost prvog servisa od drugog]].
+Graf zavisnosti jeste usmerena struktura u kojoj čvorovi predstavljaju [[Aplikativni servis|aplikativne servise]], a grana od jednog čvora ka drugom predstavlja [[Zavisnost servisa|zavisnost prvog servisa od drugog]].
 
 ## Primer
 
-U poslovnom toku primarnog [[Aplikativni sistem|aplikativnog sistema]], tri servisa označimo sa A, B i C. Ako A za svoju funkciju zahteva rezultat servisa B, a B rezultat servisa C, graf sadrži grane `A → B` i `B → C`. Put od A do C pokazuje da A posredno zavisi od C, pa otkaz servisa C može sprečiti završetak funkcija servisa B i A. Pri oporavku ovakav graf ukazuje da C treba osposobiti pre B, a B pre A. Sve [[Servisna instanca|servisne instance]] jednog logičkog servisa predstavljene su istim čvorom.
+U poslovnom toku primarnog [[Aplikativni sistem|aplikativnog sistema]], tri servisa označimo sa A, B i C. Ako A za svoju funkciju zahteva rezultat servisa B, a B rezultat servisa C, graf sadrži grane `A → B` i `B → C`. Put od A do C pokazuje da A posredno zavisi od C, pa [[Otkaz komponente distribuiranog sistema|otkaz]] servisa C može sprečiti završetak funkcija servisa B i A. Graf pokazuje redosled funkcionalnih preduslova: B ne može potpuno da izvršava funkciju koja zavisi od C dok C nije spreman, a isto važi za A u odnosu na B. Pokretanje, konfigurisanje i nezavisne provere servisa mogu se obavljati paralelno. Sve [[Servisna instanca|servisne instance]] jednog logičkog servisa predstavljene su istim čvorom.
 
 ## Napomene
 

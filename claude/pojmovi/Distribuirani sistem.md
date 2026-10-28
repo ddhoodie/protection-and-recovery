@@ -11,7 +11,7 @@ Distribuirani sistem jeste sistem čije hardverske ili softverske komponente izv
 
 ## Primer
 
-U primarnom cloud kontekstu, [[Servisna instanca|servisne instance]] i čvorovi replicirane baze rade na različitim mrežno povezanim računarima. Servisi razmenjuju zahteve, a čvorovi baze poruke replikacije kako bi zajedno izvršili poslovni tok. Ako jedna servisna instanca ili primarni čvor baze otkaže, ostale komponente mogu nastaviti da rade, iako poslovni tok možda neće moći da se završi dok se otkaz ne prevaziđe.
+U primarnom cloud kontekstu, [[Servisna instanca|servisne instance]] i čvorovi replicirane baze rade na različitim mrežno povezanim računarima. Servisi razmenjuju zahteve, a čvorovi baze poruke replikacije kako bi zajedno izvršili poslovni tok. Ako jedna servisna instanca ili primarni čvor baze doživi [[Otkaz komponente distribuiranog sistema|otkaz]], ostale komponente mogu nastaviti da rade, iako poslovni tok možda neće moći da se završi dok se otkaz ne prevaziđe.
 
 ## Napomene
 

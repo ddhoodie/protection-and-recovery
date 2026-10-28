@@ -7,11 +7,11 @@ izvor: "OASIS S-RAMP Version 1.0, Part 1: Foundation, odeljak 2.3.2.1, https://d
 
 ## Definicija
 
-Servisna instanca jeste konkretno pokrenuto izvršenje implementacije aplikativnog servisa, sa zasebnim identitetom i stanjem izvršavanja, koje se može pokrenuti, zaustaviti ili zameniti nezavisno od drugih instanci istog servisa.
+Servisna instanca jeste konkretno pokrenuto izvršenje implementacije [[Aplikativni servis|aplikativnog servisa]], sa zasebnim identitetom i stanjem izvršavanja, koje se može pokrenuti, zaustaviti ili zameniti nezavisno od drugih instanci istog servisa.
 
 ## Primer
 
-Iza balansera istovremeno radi više instanci istog aplikativnog servisa. Kada jedna instanca otkaže, prestaje da obrađuje zahteve, dok druge instance istog servisa mogu nastaviti rad. Pokrenuta zamena predstavlja novu servisnu instancu, čak i kada koristi isti programski kod i konfiguraciju kao instanca koja je otkazala.
+Iza balansera opterećenja istovremeno radi više instanci istog aplikativnog servisa. Kada jedna instanca doživi [[Otkaz komponente distribuiranog sistema|otkaz]], prestaje da obrađuje zahteve, dok druge instance istog servisa mogu nastaviti rad. Pokrenuta zamena predstavlja novu servisnu instancu, čak i kada koristi isti programski kod i konfiguraciju kao instanca koja je otkazala.
 
 ## Napomene
 

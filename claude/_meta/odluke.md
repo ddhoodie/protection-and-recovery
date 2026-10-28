@@ -19,6 +19,8 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - razmena poruka
 - identitet izvršenja
 - stanje izvršavanja
+- funkcija
+- balanser opterećenja
 - procesor
 - radna memorija
 - virtualizacija
@@ -33,11 +35,10 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 
 ## Terminološke odluke
 
-- 2026-10-20: Naziv „Međuzavisni tok“ zamenjen je preciznijim nazivom „Poslovni tok kroz više servisa i baza“. Stari srpski naziv i engleski termini ostaju aliasi iste beleške.
 - 2026-10-20: Za stanje u kojem sistem ne pruža nijednu zahtevanu funkciju koristi se naziv „Potpuni otkaz sistema“. Izraz „potpuni pad sistema“ ostaje alias, jer „pad“ može neprecizno označavati i prestanak rada procesa ili pojedinačne komponente.
 
 ## Otvorena pitanja
 
-- Razmotriti zasebne beleške za računski čvor, maskiranje otkaza, redundansu, zajednički uzrok otkaza, izolaciju otkaza, lančani otkaz, aplikativni servis, replikaciju, trajno stanje, sinhronu i asinhronu komunikaciju, mrežnu particiju, otkaz komunikacionog kanala, jačinu zavisnosti servisa, ciklus zavisnosti, redosled oporavka zavisnih komponenti, izvršenje i stanje poslovnog toka, konzistentno stanje toka, uzrok otkaza (`fault`), neispravno stanje (`error`), način otkaza (`failure mode`), zastoj procesa, latenciju zahteva, cilj nivoa usluge (SLO) i modele `crash-stop`, `crash-recovery` i `fail-stop`.
+- Razmotriti zasebne beleške za računski čvor, maskiranje otkaza, redundansu, zajednički uzrok otkaza, izolaciju otkaza, lančani otkaz, replikaciju, trajno stanje, sinhronu i asinhronu komunikaciju, mrežnu particiju, otkaz komunikacionog kanala, jačinu zavisnosti servisa, ciklus zavisnosti, redosled oporavka zavisnih komponenti, izvršenje i stanje poslovnog toka, konzistentno stanje toka, uzrok otkaza (`fault`), neispravno stanje (`error`), način otkaza (`failure mode`), zastoj procesa, latenciju zahteva, cilj nivoa usluge (SLO) i modele `crash-stop`, `crash-recovery` i `fail-stop`.
 
 
