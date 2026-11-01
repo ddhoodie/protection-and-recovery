@@ -23,6 +23,6 @@ Vrednost metrike može biti trenutna vrednost, kao što je zauzeće radne memori
 
 Metrika pokazuje kako se neka veličina menja kroz vreme, [[Log|log]] šta se dogodilo u pojedinačnim događajima, a [[Trag|trag]] kuda je prošao jedan zahtev. Metrika zato brzo otkriva promenu u ponašanju, ali kada sažima merenja, gubi pojedinačne zahteve koje druga dva izvora mogu da prikažu.
 
-Izbor metrika i načina sažimanja utiče na [[Opservabilnost|opservabilnost]] sistema. Prosek može da prikrije mali deo veoma sporih zahteva koji se vidi u visokom percentilu.
+Izbor metrika i načina sažimanja utiče na [[Opservabilnost|opservabilnost]] sistema. Prosek može da prikrije mali deo veoma sporih zahteva koji se vidi u visokom percentilu. Posle uklanjanja jedine spore instance iz saobraćaja metrika trajanja odgovora može da se vrati na uobičajenu vrednost, iako je kapacitet servisa smanjen, jer meri samo zahteve koje obrađuju preostale instance.
 
 Metrika se razlikuje od mera oporavka kao što je [[Procenat uspešnih zahteva tokom otkaza|procenat uspešnih zahteva tokom otkaza]]. Takva mera se određuje za unapred utvrđen interval i kriterijum uspeha, a metrike mogu da budu podaci iz kojih se računa.

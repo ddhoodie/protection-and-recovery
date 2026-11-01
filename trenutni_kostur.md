@@ -89,7 +89,7 @@ Celina 8 — Orkestracija servisnih instanci
 9. Usmeravanje zahteva samo na ispravne instance
 Celina obrađuje oporavak računarskih resursa kao kontrolisani sled: otkrivanje, uklanjanje, restart ili zamena i vraćanje u saobraćaj.
 Celina 9 — Timeout, retry i circuit breaker
-1. Ograničavanje čekanja pomoću timeout-a
+1. [Placeholder: pojam će biti određen]
 2. Ponovno izvršavanje zahteva (retry)
 3. Prolazni otkazi
 4. Exponential backoff

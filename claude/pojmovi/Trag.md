@@ -26,7 +26,7 @@ Opis jedne operacije u tragu naziva se raspon (span).
 
 Trag pokazuje kako je vreme raspoređeno unutar jednog zahteva, [[Metrika|metrika]] kako se neka veličina menja kroz vreme, a [[Log|log]] šta je komponenta zabeležila o pojedinačnim događajima. Zato metrika može da pokaže da su odgovori uopšte sporiji, a trag gde je vreme potrošeno u konkretnom zahtevu.
 
-Trag jednog zahteva ne mora da predstavlja ponašanje celog sistema. Taj zahtev može biti netipičan, a sistemi za prikupljanje tragova mogu da čuvaju samo uzorak zahteva.
+Trag jednog zahteva ne mora da predstavlja ponašanje celog sistema. Taj zahtev može biti netipičan, a sistemi za prikupljanje tragova mogu da čuvaju samo uzorak zahteva. Ako se čuva jedan od sto tragova, spor zahtev može da ostane nesačuvan, pa metrika pokazuje sporost, a dostupni trag brz zahtev.
 
 Trag sam po sebi ne dokazuje uzrok problema. On pokazuje gde je vreme potrošeno, a duga operacija može biti i posledica čekanja na nešto što trag ne prikazuje.
 
