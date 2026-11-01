@@ -31,7 +31,7 @@ Celina 3 — Ciljevi i mere oporavka — Viktor Srbljin
 8. Ukupno vreme oporavka sistema
 Ova celina razdvaja oporavak servisa, oporavak podataka i oporavak poslovnih tokova.
 II deo — Otkrivanje otkaza
-Celina 4 — Opservabilnost i detekcija otkaza
+Celina 4 — Opservabilnost i detekcija otkaza — Nemanja Sovilj
 1. Opservabilnost
 2. Logovi
 3. Metrike
