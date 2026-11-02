@@ -13,3 +13,7 @@ Cloud sistem služi kao zajednički kontekst za proučavanje delimičnih otkaza 
 - Replicirana baza sa primarnim čvorom i replikama.
 - Poslovni tok koji prolazi kroz više servisa i baza.
 - Mehanizam za kontrolisano izazivanje otkaza.
+- Logovi, metrike i tragovi koje tokom rada proizvode servisne instance i čvorovi baze i koji su dostupni van tih komponenti.
+- Provere zdravlja kojima balanser opterećenja periodično ispituje servisne instance.
+- Signali života koje primarni čvor replicirane baze periodično šalje replikama.
+- Rokovi čekanja kojima servisi ograničavaju čekanje na odgovor zavisnih servisa.

@@ -31,7 +31,7 @@ Celina 3 — Ciljevi i mere oporavka — Viktor Srbljin
 8. Ukupno vreme oporavka sistema
 Ova celina razdvaja oporavak servisa, oporavak podataka i oporavak poslovnih tokova.
 II deo — Otkrivanje otkaza
-Celina 4 — Opservabilnost i detekcija otkaza
+Celina 4 — Opservabilnost i detekcija otkaza — Nemanja Sovilj
 1. Opservabilnost
 2. Logovi
 3. Metrike
@@ -89,7 +89,7 @@ Celina 8 — Orkestracija servisnih instanci
 9. Usmeravanje zahteva samo na ispravne instance
 Celina obrađuje oporavak računarskih resursa kao kontrolisani sled: otkrivanje, uklanjanje, restart ili zamena i vraćanje u saobraćaj.
 Celina 9 — Timeout, retry i circuit breaker
-1. Ograničavanje čekanja pomoću timeout-a
+1. [Placeholder: pojam će biti određen]
 2. Ponovno izvršavanje zahteva (retry)
 3. Prolazni otkazi
 4. Exponential backoff
