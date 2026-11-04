@@ -11,7 +11,7 @@ Signal života jeste poruka koju komponenta [[Distribuirani sistem|distribuirano
 
 ## Primer
 
-U primarnom cloud kontekstu, primarni čvor replicirane baze svakih 100 ms šalje signal života replikama. Replika koja primi poruku može da zaključi da se primarni čvor izvršavao u trenutku slanja, ali ne i da se izvršava sada.
+U primarnom cloud kontekstu, primarni čvor replicirane baze svakih 100 ms šalje signal života replikama. Replika koja primi poruku može da zaključi da se proces baze na primarnom [[Čvor replicirane baze|čvoru]] izvršavao u trenutku slanja, ali ne i da se izvršava sada.
 
 Ako replika ne primi nijednu poruku tokom 1 s, ona ne može samo na osnovu toga da utvrdi da li je nastao [[Pad procesa|pad procesa]] primarnog čvora, [[Prekid mreže|prekid mreže]] između njih ili je primarni čvor toliko opterećen da poruke kasne. Ni prijem poruka nema širi značaj. Ako mehanizam za kontrolisano izazivanje otkaza uspori upise, primarni čvor i dalje može redovno da šalje signal života iako su upisi spori.
 
