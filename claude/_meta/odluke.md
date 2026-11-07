@@ -33,6 +33,8 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 
 ## Promene konvencija
 
+- 2026-11-07: „Razlikovanje pada primarnog čvora od njegovog usporenja“ spojeno je sa beleškom „Otkrivanje otkaza primarnog čvora“, jer je uži slučaj pojma „Razlikovanje pada procesa, usporenja i prekida mreže“ iz celine 4. U beleški ostaje samo ono što je specifično za primarni čvor. Na oslobođeno mesto u kosturu celine 6 dolazi „Failover“ kao prvi pojam.
+
 - 2026-10-31: „Razlikovanje pada procesa, usporenja i prekida mreže“ vodi se kao zaseban pojam, a ne kao veza između beležaka „Pad procesa“, „Usporavanje servisa“ i „Prekid mreže“, jer opisuje postupak procene na osnovu više opažanja, a ne razliku između definicija.
 - 2026-10-31: Beleške celine 6 upisane su posle dogovora sa studentom, pa konvencija o unapred prihvaćenom prvom predlogu od 2026-10-21 za njih nije primenjena.
 - 2026-10-31: U celinu 6 dodata je beleška „Failover“, koje nema u kosturu, jer je koriste „Pokretanje failover-a“ i „Neuspeli failover“.
