@@ -1,9 +1,11 @@
 ---
 tip: odluke
 ---
+
 # Odluke
 
 ## Pretpostavljeni pojmovi
+
 Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev studenta.
 
 - programiranje
@@ -31,13 +33,20 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 
 ## Promene konvencija
 
+- 2026-11-07: „Razlikovanje pada primarnog čvora od njegovog usporenja“ spojeno je sa beleškom „Otkrivanje otkaza primarnog čvora“, jer je uži slučaj pojma „Razlikovanje pada procesa, usporenja i prekida mreže“ iz celine 4. U beleški ostaje samo ono što je specifično za primarni čvor. Na oslobođeno mesto u kosturu celine 6 dolazi „Failover“ kao prvi pojam.
+
 - 2026-10-31: „Razlikovanje pada procesa, usporenja i prekida mreže“ vodi se kao zaseban pojam, a ne kao veza između beležaka „Pad procesa“, „Usporavanje servisa“ i „Prekid mreže“, jer opisuje postupak procene na osnovu više opažanja, a ne razliku između definicija.
+- 2026-10-31: Beleške celine 6 upisane su posle dogovora sa studentom, pa konvencija o unapred prihvaćenom prvom predlogu od 2026-10-21 za njih nije primenjena.
+- 2026-10-31: U celinu 6 dodata je beleška „Failover“, koje nema u kosturu, jer je koriste „Pokretanje failover-a“ i „Neuspeli failover“.
+- 2026-10-31: Promašen RTO ili RPO sam po sebi ne čini failover neuspelim, već se meri posebno.
 - 2026-10-21: Student trajno i unapred prihvata prvi predlog za svaki budući pojam. Posle provere izvora, tematskog obima, razgraničenja i slabosti, beleška se odmah upisuje bez dodatnog pitanja za potvrdu. Odluka zamenjuje istovetnu odluku od 2026-10-20 i važi dok je student izričito ne promeni.
 - 2026-10-21: „Razlika između RTO i RPO“ vodi se kao uzajamno razgraničenje beležaka „Ciljno vreme oporavka“ i „Ciljna tačka oporavka“, a ne kao zaseban pojam.
 - 2026-10-20: „Razlika između otkaza komponente i pada celog sistema“ vodi se kao veza između beležaka „Otkaz komponente distribuiranog sistema“ i „Potpuni otkaz sistema“, a ne kao zaseban pojam, da se definicije ne bi duplirale.
 
 ## Terminološke odluke
 
+- 2026-10-31: „Dva istovremena primarna čvora“ označava stanje uloga, a „Split-brain“ stanje u kojem više čvorova nezavisno prihvata upise, pa se podaci razilaze. U literaturi se ovi izrazi često koriste kao sinonimi.
+- 2026-10-31: Termini „Failover“, „Failback“, „Fencing“ i „Split-brain“ ostaju na engleskom, jer srpski prevodi nisu ustaljeni.
 - 2026-10-20: Za stanje u kojem sistem ne pruža nijednu zahtevanu funkciju koristi se naziv „Potpuni otkaz sistema“. Izraz „potpuni pad sistema“ ostaje alias, jer „pad“ može neprecizno označavati i prestanak rada procesa ili pojedinačne komponente.
 - 2026-10-31: Za `heartbeat` koristi se naziv „Signal života“, jer je glavni termin u bazi srpski. Izraz „heartbeat“ ostaje alias.
 - 2026-10-31: Za `timeout` koristi se naziv „Rok čekanja“, jer je glavni termin u bazi srpski. Izraz „timeout“ ostaje alias.
@@ -47,4 +56,6 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 
 - Razmotriti zasebne beleške za računski čvor, redundansu, zajednički uzrok otkaza, izolaciju otkaza, lančani otkaz, replikaciju, trajno stanje, sinhronu i asinhronu komunikaciju, mrežnu particiju, otkaz komunikacionog kanala, jačinu zavisnosti servisa, ciklus zavisnosti, redosled oporavka zavisnih komponenti, izvršenje i stanje poslovnog toka, konzistentno stanje toka, uzrok otkaza (`fault`), neispravno stanje (`error`), način otkaza (`failure mode`), zastoj procesa, latenciju zahteva, cilj nivoa usluge (SLO) i modele `crash-stop`, `crash-recovery` i `fail-stop`.
 
-
+- Razmotriti zasebne beleške za računski čvor, maskiranje otkaza, redundansu, zajednički uzrok otkaza, izolaciju otkaza, lančani otkaz, replikaciju, trajno stanje, sinhronu i asinhronu komunikaciju, mrežnu particiju, otkaz komunikacionog kanala, jačinu zavisnosti servisa, ciklus zavisnosti, redosled oporavka zavisnih komponenti, izvršenje i stanje poslovnog toka, konzistentno stanje toka, uzrok otkaza (`fault`), neispravno stanje (`error`), način otkaza (`failure mode`), zastoj procesa, latenciju zahteva, cilj nivoa usluge (SLO) i modele `crash-stop`, `crash-recovery` i `fail-stop`.
+- Beleške celine 6 linkuju pojmove „Primarni čvor“, „Replika“, „Mrežna particija“ i „Detekcija otkaza“, koji još nemaju beleške. Treba ih definisati u celinama 4 i 5 pod istim nazivima.
+- Proveriti u originalu navode iz beleški „Split-brain“ (Kleppmann, DDIA, poglavlje 5) i „Izbor novog primarnog čvora“ (Raft). Ti tekstovi nisu pročitani, već samo sekundarni izvori.

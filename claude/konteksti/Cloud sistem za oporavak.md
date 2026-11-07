@@ -10,7 +10,8 @@ Cloud sistem služi kao zajednički kontekst za proučavanje delimičnih otkaza 
 
 - Više međuzavisnih [[Aplikativni servis|aplikativnih servisa]].
 - Više servisnih instanci iza balansera opterećenja.
-- Replicirana baza sa primarnim čvorom i replikama.
+- Replicirana baza sa primarnim čvorom P i replikama R1 i R2.
+- Nadzorna komponenta koja prati primarni čvor i može da pokrene failover.
 - Poslovni tok koji prolazi kroz više servisa i baza.
 - Mehanizam za kontrolisano izazivanje otkaza.
 - Logovi, metrike i tragovi koje tokom rada proizvode servisne instance i čvorovi baze i koji su dostupni van tih komponenti.
