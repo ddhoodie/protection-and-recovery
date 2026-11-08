@@ -15,6 +15,6 @@ U primarnom cloud kontekstu, primarni čvor replicirane baze doživi [[Otkaz kom
 
 ## Napomene
 
-Delimičnost se odnosi na to da je otkaz zahvatio samo deo komponenti, a ne nužno na stepen funkcionalnosti koji korisnik još dobija. Otkaz jedne kritične komponente može učiniti ceo [[Aplikativni sistem|aplikativni sistem]] nedostupnim iako njegove druge komponente i dalje rade. Obrnuto, redundansa može potpuno prikriti otkaz komponente, pa sistem spolja nastavlja da pruža punu funkcionalnost.
+Delimičnost se odnosi na to da je otkaz zahvatio samo deo komponenti, a ne nužno na stepen funkcionalnosti koji korisnik još dobija. Otkaz jedne kritične komponente može učiniti ceo [[Aplikativni sistem|aplikativni sistem]] nedostupnim iako njegove druge komponente i dalje rade. Obrnuto, [[Maskiranje otkaza]] može potpuno sakriti otkaz komponente, pa sistem spolja nastavlja da pruža punu funkcionalnost.
 
 Granica posmatranog sistema utiče na klasifikaciju. Otkaz svih servisnih instanci jednog servisa može biti potpun otkaz tog servisa, ali istovremeno samo delimični otkaz šireg distribuiranog sistema čije druge komponente nastavljaju da rade. [[Zavisnost servisa|Zavisnosti servisa]] određuju koliko će se posledice početnog otkaza proširiti.
