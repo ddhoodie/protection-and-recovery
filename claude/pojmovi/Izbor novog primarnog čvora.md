@@ -26,4 +26,4 @@ Izbor može da sprovede jedna nadzorna komponenta ili sami čvorovi glasanjem. K
 
 Ažurnost nije jedini kriterijum. Na izbor mogu uticati i lokacija i kapacitet replike, zbog čega najažurnija replika ne mora uvek biti izabrana.
 
-Izbor može da ne uspe ako nijedna replika nije dostupna, ako sve previše zaostaju ili ako nijedan kandidat ne dobije većinu. U tom slučaju izbor se ponavlja, a vreme bez primarnog čvora troši [[Ciljno vreme oporavka|RTO]]. Ako se ne izabere nijedan čvor, failover postaje [[Neuspeli failover|neuspeli failover]].
+Izbor može da ne uspe ako nijedna replika nije dostupna, ako sve previše zaostaju ili ako nijedan kandidat ne dobije većinu. U tom slučaju izbor se ponavlja, a vreme bez primarnog čvora produžava ostvareno trajanje oporavka i smanjuje preostalo vreme do granice [[Ciljno vreme oporavka|RTO-a]]. Ako se ne izabere nijedan čvor, failover postaje [[Neuspeli failover|neuspeli failover]].

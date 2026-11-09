@@ -45,6 +45,8 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 
 ## Terminološke odluke
 
+- 2026-11-09: RTO je ciljna granica, a ne vreme koje se „troši“ ili u koje nešto „ulazi“. Vreme detekcije, izbora ili fencing-a ulazi u ostvareno trajanje oporavka, a to trajanje se poredi sa RTO-om. Primenjeno u beleškama celine 6 po uzoru na belešku „Detekcija otkaza“.
+
 - 2026-10-31: „Dva istovremena primarna čvora“ označava stanje uloga, a „Split-brain“ stanje u kojem više čvorova nezavisno prihvata upise, pa se podaci razilaze. U literaturi se ovi izrazi često koriste kao sinonimi.
 - 2026-10-31: Termini „Failover“, „Failback“, „Fencing“ i „Split-brain“ ostaju na engleskom, jer srpski prevodi nisu ustaljeni.
 - 2026-10-20: Za stanje u kojem sistem ne pruža nijednu zahtevanu funkciju koristi se naziv „Potpuni otkaz sistema“. Izraz „potpuni pad sistema“ ostaje alias, jer „pad“ može neprecizno označavati i prestanak rada procesa ili pojedinačne komponente.

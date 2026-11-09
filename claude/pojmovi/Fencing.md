@@ -24,6 +24,6 @@ U primarnom cloud kontekstu, nadzorna komponenta je zaključila da je primarni �
 
 Fencing je potreban jer čvor koji je samo usporen ili odsečen ne mora znati da je izgubio ulogu. Zato se bezbednost [[Failover|failover-a]] ne oslanja na to da će se taj čvor sam povući, čime se sprečava [[Split-brain|split-brain]].
 
-Redosled je bitan. Fencing mora da se završi pre nego što novi primarni čvor počne da prihvata upise, jer u suprotnom postoji interval u kojem oba čvora mogu da upisuju. Ako fencing ne uspe, na primer zato što cloud API nije dostupan, bezbednije je odložiti failover nego rizikovati [[Dva istovremena primarna čvora|dva istovremena primarna čvora]], iako se time troši [[Ciljno vreme oporavka|RTO]].
+Redosled je bitan. Fencing mora da se završi pre nego što novi primarni čvor počne da prihvata upise, jer u suprotnom postoji interval u kojem oba čvora mogu da upisuju. Ako fencing ne uspe, na primer zato što cloud API nije dostupan, bezbednije je odložiti failover nego rizikovati [[Dva istovremena primarna čvora|dva istovremena primarna čvora]], iako se time produžava ostvareno trajanje oporavka i smanjuje preostalo vreme do granice [[Ciljno vreme oporavka|RTO-a]].
 
 Načini se razlikuju po tome gde deluju. Isključivanje čvora zaustavlja ceo čvor, blokiranje pristupa mu oduzima mrežnu vezu ili pravo pristupa skladištu, a odbijanje upisa pomoću tokena zahteva da sam resurs proverava token i pamti najveći primljeni.

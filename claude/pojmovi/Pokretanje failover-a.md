@@ -16,7 +16,7 @@ Pokretanje failover-a jeste odluka operatera ili automatske komponente da se na 
 
 ## Primer
 
-U primarnom cloud kontekstu, pravilo nadzorne komponente glasi da se failover pokreće ako primarni čvor P ne odgovara 10 sekundi i ako bar jedna replika potvrdi da ni ona ne prima poruke od njega. U 12:00:10 oba uslova su ispunjena i nadzorna komponenta pokreće failover bez čekanja operatera. Kraća granica, na primer 3 sekunde, ubrzala bi oporavak, ali bi kratkotrajno [[Usporavanje servisa|usporavanje]] čvora P moglo da pokrene nepotreban failover. Duža granica, na primer 2 minuta, smanjila bi taj rizik, ali bi potrošila petinu [[Ciljno vreme oporavka|RTO-a]] od 10 minuta pre nego što oporavak uopšte počne.
+U primarnom cloud kontekstu, pravilo nadzorne komponente glasi da se failover pokreće ako primarni čvor P ne odgovara 10 sekundi i ako bar jedna replika potvrdi da ni ona ne prima poruke od njega. U 12:00:10 oba uslova su ispunjena i nadzorna komponenta pokreće failover bez čekanja operatera. Kraća granica, na primer 3 sekunde, ubrzala bi oporavak, ali bi kratkotrajno [[Usporavanje servisa|usporavanje]] čvora P moglo da pokrene nepotreban failover. Duža granica, na primer 2 minuta, smanjila bi taj rizik, ali bi ostvarenom trajanju oporavka dodala 2 minuta pre nego što oporavak uopšte počne, pa bi do granice [[Ciljno vreme oporavka|RTO-a]] od 10 minuta ostalo najviše 8 minuta.
 
 ## Napomene
 
@@ -24,4 +24,4 @@ Pokretanje odvaja uslov za odluku od njenog izvršenja. Otkriven otkaz ne mora a
 
 Automatsko pokretanje je brže, ali se greška u pravilu ponavlja pri svakom otkazu bez ičije provere. Ručno pokretanje je sporije, ali operater može da uzme u obzir ono što pravilo ne vidi, na primer planirano održavanje ili šire smetnje u mreži. Zato se često kombinuju: jasni slučajevi se rešavaju automatski, a nejasni se prepuštaju operateru.
 
-Uslovi za pokretanje mogu uključiti i proveru da postoji dovoljno ažurna replika. Ako nijedna replika nije dovoljno ažurna, failover bi doveo do gubitka podataka većeg od dozvoljenog po [[Ciljna tačka oporavka|RPO-u]], pa je bolje sačekati povratak čvora P. Odluka da se failover ne pokrene takođe je ishod ovog koraka. Pokretanje ne garantuje uspeh, jer i pokrenut failover može postati [[Neuspeli failover|neuspeli failover]].
+Uslovi za pokretanje mogu uključiti i proveru da postoji dovoljno ažurna replika. Ako nijedna replika nije dovoljno ažurna, failover bi doveo do gubitka podataka većeg od dozvoljenog po [[Ciljna tačka oporavka|RPO-u]]. Automatski failover se tada ne pokreće bez odluke o prihvatljivom gubitku podataka, jer se bira između prekoračenja RPO-a i nastavka prekida do mogućeg povratka čvora P, koji može biti i trajno nedostupan. Odluka da se failover ne pokrene takođe je ishod ovog koraka. Pokretanje ne garantuje uspeh, jer i pokrenut failover može postati [[Neuspeli failover|neuspeli failover]].
