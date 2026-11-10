@@ -43,7 +43,7 @@ Celina 4 — Opservabilnost i detekcija otkaza — Nemanja Sovilj
 9. Razlikovanje pada procesa, usporenja i prekida mreže
 Celina prati put od posmatranja sistema do odluke da je neka komponenta neispravna. Poseban naglasak je na činjenici da spor odgovor ne mora značiti pad komponente.
 III deo — Oporavak perzistentnog sloja
-Celina 5 — Replikacija i konzistentnost podataka
+Celina 5 — Replikacija i konzistentnost podataka - Ana Poparić
 1. Primarni čvor
 2. Replika
 3. Primarni čvor i replike
@@ -54,7 +54,7 @@ Celina 5 — Replikacija i konzistentnost podataka
 8. CAP teorema
 9. Kompromis konzistentnosti i dostupnosti tokom mrežne particije
 Celina uvodi model baze sa primarnim čvorom i replikama, a zatim ga povezuje sa mrežnom particijom i CAP teorijom.
-Celina 6 — Failover, split-brain i failback
+Celina 6 — Failover, split-brain i failback - Ana Šinik
 1. Failover
 2. Otkrivanje otkaza primarnog čvora
 3. Pokretanje failover-a
