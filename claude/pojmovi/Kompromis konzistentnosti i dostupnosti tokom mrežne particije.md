@@ -17,6 +17,6 @@ U primarnom cloud kontekstu, mrežna particija odvoji [[Replika|replike]] i serv
 
 Odluka ne mora biti ista za ceo sistem. Donosi se posebno za svaku vrstu zahteva, prema tome šta je skuplje: odbijen zahtev ili odgovor sa zastarelim podacima.
 
-Isti izbor postoji i za upise. Kod sinhrone [[Replikacija podataka sa primarnog čvora na replike|replikacije]] primarni čvor koji ne dobije odgovor replike da je izmenu primila prestaje da potvrđuje upise i bira konzistentnost. Kod asinhrone nastavlja da potvrđuje upise i bira dostupnost, uz rizik da se potvrđene izmene izgube.
+Sličan izbor postoji i za upise, ali ga ne određuje sam način [[Replikacija podataka sa primarnog čvora na replike|replikacije]]. Kod sinhrone replikacije primarni čvor prestaje da potvrđuje upise kada ne dobije odgovor od podešenog broja replika. Kod asinhrone može da ih potvrđuje i bez odgovora replika, uz rizik da se te izmene izgube ako ulogu primarnog čvora kasnije preuzme drugi čvor.
 
 [[CAP teorema]] kaže da je ovaj izbor neizbežan, a kompromis je odluka kojom se on pravi za konkretan sistem.

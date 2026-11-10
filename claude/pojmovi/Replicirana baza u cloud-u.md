@@ -11,10 +11,10 @@ Replicirana baza u cloud-u jeste baza podataka koju servisi koriste kao jednu ba
 
 ## Primer
 
-U primarnom cloud kontekstu, servisi A, B i C čuvaju podatke poslovnog toka u jednoj repliciranoj bazi. Primarni čvor i replike rade na različitim [[Računarski resurs|računarskim resursima]]. Kada računarski resurs primarnog čvora otkaže, replike na drugim računarskim resursima nastavljaju da rade, pa to nije [[Potpuni otkaz sistema|potpuni otkaz]] baze.
+U primarnom cloud kontekstu, servisi A, B i C čuvaju podatke poslovnog toka u jednoj repliciranoj bazi. Primarni čvor i replike rade na različitim [[Računarski resurs|računarskim resursima]]. Kada računarski resurs primarnog čvora otkaže, replike na drugim računarskim resursima nastavljaju da rade, pa baza i dalje odgovara na čitanja, iako upis nije moguć.
 
 ## Napomene
 
-Otkaz jednog čvora, dok ostali čvorovi rade, jeste [[Delimični otkaz|delimični otkaz]] baze, a ne [[Potpuni otkaz sistema|potpuni otkaz]]. Koliko funkcija baza tada još pruža zavisi od toga koji je čvor otkazao.
+Otkaz jednog čvora, dok ostali čvorovi rade, jeste [[Delimični otkaz|delimični otkaz]] baze. Da li je otkaz i [[Potpuni otkaz sistema|potpuni]] zavisi od toga koje funkcije baza još pruža, a to zavisi od toga koji je čvor otkazao.
 
 Replike štite samo od otkaza koji ne pogađa sve čvorove istovremeno. Ako svi čvorovi zavise od istog računarskog resursa ili drugog zajedničkog uzroka otkaza, jedan događaj ih sve obara, kao što opisuje beleška [[Distribuirani sistem]]. Zato je za zaštitu važno da čvorovi budu smešteni na računarskim resursima koji ne dele zajednički uzrok otkaza.

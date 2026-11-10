@@ -7,7 +7,7 @@ izvor: "Seth Gilbert i Nancy Lynch, Brewer's Conjecture and the Feasibility of C
 
 ## Definicija
 
-CAP teorema jeste tvrđenje da [[Replicirana baza u cloud-u|replicirana baza]] ne može tokom [[Mrežna particija|mrežne particije]] istovremeno da obezbedi jaku [[Konzistentnost podataka|konzistentnost podataka]] i dostupnost, odnosno da svaki njen čvor koji radi na svaki zahtev vrati odgovor koji nije greška.
+CAP teorema jeste tvrđenje da [[Replicirana baza u cloud-u|replicirana baza]] ne može tokom [[Mrežna particija|mrežne particije]] istovremeno da obezbedi jaku [[Konzistentnost podataka|konzistentnost podataka]] i dostupnost. Dostupnost ovde znači da svaki čvor koji radi na svaki zahtev pre ili kasnije vrati odgovor koji nije greška.
 
 ## Primer
 

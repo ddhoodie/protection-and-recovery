@@ -11,7 +11,7 @@ Među čvorovima baze podataka koji čuvaju kopije istih podataka, primarni čvo
 
 ## Primer
 
-U primarnom cloud kontekstu, servisne instance servisa A, B i C šalju [[Replicirana baza u cloud-u|repliciranoj bazi]] zahteve za upis podataka poslovnog toka, a te zahteve prima i izvršava samo primarni čvor. Kada primarni čvor otkaže, upis novih podataka nije moguć sve dok se ta funkcija ponovo ne uspostavi, pa poslovni tok koji zahteva upis privremeno ne može da napreduje. Ostali čvorovi baze su ispravni i sistem u celini nije prestao da radi, što je [[Delimični otkaz|delimični otkaz]].
+U primarnom cloud kontekstu, servisne instance servisa A, B i C šalju [[Replicirana baza u cloud-u|repliciranoj bazi]] zahteve za upis podataka poslovnog toka, a te zahteve prima i izvršava samo primarni čvor. Kada primarni čvor otkaže, upis novih podataka nije moguć sve dok se ta funkcija ponovo ne uspostavi, pa poslovni tok koji zahteva upis privremeno ne može da napreduje. Ostali čvorovi baze su ispravni, pa je to [[Delimični otkaz|delimični otkaz]] baze, a da li je otkaz i [[Potpuni otkaz sistema|potpuni]] zavisi od toga koje su funkcije još dostupne.
 
 ## Napomene
 

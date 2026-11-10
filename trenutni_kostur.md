@@ -54,7 +54,7 @@ Celina 5 — Replikacija i konzistentnost podataka - Ana Poparić
 8. CAP teorema
 9. Kompromis konzistentnosti i dostupnosti tokom mrežne particije
 Celina uvodi model baze sa primarnim čvorom i replikama, a zatim ga povezuje sa mrežnom particijom i CAP teorijom.
-Celina 6 — Failover, split-brain i failback
+Celina 6 — Failover, split-brain i failback - Ana Šinik
 1. Failover
 2. Otkrivanje otkaza primarnog čvora
 3. Pokretanje failover-a

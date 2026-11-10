@@ -15,7 +15,7 @@ U primarnom cloud kontekstu, baza ima jedan primarni čvor i više replika. Serv
 
 ## Napomene
 
-Raspored pretpostavlja da u jednom trenutku postoji najviše jedan primarni čvor, jer samo tada sve izmene prolaze kroz jedno mesto i replike imaju jedinstven izvor izmena. Ako bi dva čvora istovremeno primala i izvršavala zahteve za izmenu, njihovi podaci bi se mogli razići, a to više ne bi bio ovaj raspored.
+Raspored pretpostavlja da u jednom trenutku postoji najviše jedan primarni čvor, jer samo tada sve izmene prolaze kroz jedno mesto i replike imaju jedinstven izvor izmena. Kada je ta pretpostavka narušena, raspored i dalje postoji, ali u njemu nastaju [[Dva istovremena primarna čvora|dva istovremena primarna čvora]], što može da dovede do [[Split-brain|split-brain-a]].
 
 Sam raspored ne određuje šta se dešava kada primarni čvor otkaže: replike čuvaju kopije podataka, ali nastavak upisa zahteva da neki čvor preuzme ulogu primarnog.
 
