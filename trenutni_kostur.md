@@ -65,40 +65,13 @@ Celina 6 — Failover, split-brain i failback - Ana Šinik
 8. Neuspeli failover
 9. Failback na prvobitni primarni čvor
 Redosled tema prati kompletan životni ciklus promene primarnog čvora: detekciju, izbor, zaštitu od paralelnog rada i eventualni povratak na prvobitni čvor.
-Celina 7 — Backup, PITR i gubitak podataka
-1. Backup
-2. Point-in-Time Recovery (PITR)
-3. Replikacija, backup i PITR
-4. Logička greška u podacima
-5. Vraćanje baze na stanje pre logičke greške
-6. Greška koja se replicira na sve čvorove
-7. Slučajevi u kojima replikacija ne pomaže
-8. Gubitak podataka u zavisnosti od mehanizma oporavka
-9. Trajanje oporavka u zavisnosti od mehanizma oporavka
-Celina jasno razdvaja oporavak od pada čvora i oporavak od logički neispravne promene podataka.
-IV deo — Oporavak aplikativnih servisa
-Celina 8 — Orkestracija servisnih instanci
-1. Aplikacija sa više servisnih instanci
-2. Servisne instance iza balansera
-3. Orkestracija servisnih instanci
-4. Željeno stanje sistema
-5. Uklanjanje neispravne instance iz saobraćaja
-6. Restart servisne instance
-7. Zamena servisne instance
-8. Ponovno uključivanje instance u saobraćaj
-9. Usmeravanje zahteva samo na ispravne instance
-Celina obrađuje oporavak računarskih resursa kao kontrolisani sled: otkrivanje, uklanjanje, restart ili zamena i vraćanje u saobraćaj.
-Celina 9 — Timeout, retry i circuit breaker
-1. [Placeholder: pojam će biti određen]
-2. Ponovno izvršavanje zahteva (retry)
-3. Prolazni otkazi
-4. Exponential backoff
-5. Jitter
-6. Retry bez backoff-a i jitter-a
-7. Retry storm
-8. Thundering herd
-9. Circuit breaker i sprečavanje lančanog otkaza
-Celina počinje pojedinačnim zahtevom, a završava ponašanjem velikog broja klijenata koji istovremeno pokušavaju da pristupe servisu u oporavku.
+Celina 7 — Multi-leader i leaderless replikacija
+8–12 pojmova da objasne multi-leader i leaderless replikaciju, sa akcentom na zaštitu i oporavak. Pojmove smišljaju prezenteri.
+IV deo — Particionisanje mreže i sharding
+Celina 8 — Network particionisanje i sharding
+Prezenteri celine 8 i celine 9 neka se dogovore kako dele temu. Zajedno pokrivaju network particionisanje i sharding, sa akcentom na zaštitu i oporavak. Pojmove smišljaju prezenteri.
+Celina 9 — Network particionisanje i sharding
+Isti dogovor kao kod celine 8. Zajedno pokrivaju network particionisanje i sharding, sa akcentom na zaštitu i oporavak. Pojmove smišljaju prezenteri.
 V deo — Konzistentnost poslovnih tokova
 Celina 10 — Saga i kompenzacione transakcije
 1. Poslovni tok posle delimičnog otkaza
@@ -142,9 +115,45 @@ Ukupna struktura prati klasičan didaktički napredak:
 4. posmatranje i detekcija problema;
 5. replikacija i konzistentnost;
 6. promena primarnog čvora;
-7. oporavak podataka;
-8. oporavak servisnih instanci;
-9. otpornost servisnih poziva;
+7. multi-leader i leaderless replikacija, sa akcentom na zaštitu i oporavak;
+8. network particionisanje i sharding, deo po dogovoru sa celinom 9;
+9. network particionisanje i sharding, deo po dogovoru sa celinom 8;
 10. oporavak distribuiranih transakcija;
 11. pouzdano izvršavanje tokova;
 12. oporavak i testiranje sistema kao celine.
+
+Backup — raniji pojmovi celina 7, 8 i 9
+
+Celina 7 — Backup, PITR i gubitak podataka
+1. Backup
+2. Point-in-Time Recovery (PITR)
+3. Replikacija, backup i PITR
+4. Logička greška u podacima
+5. Vraćanje baze na stanje pre logičke greške
+6. Greška koja se replicira na sve čvorove
+7. Slučajevi u kojima replikacija ne pomaže
+8. Gubitak podataka u zavisnosti od mehanizma oporavka
+9. Trajanje oporavka u zavisnosti od mehanizma oporavka
+Celina jasno razdvaja oporavak od pada čvora i oporavak od logički neispravne promene podataka.
+Celina 8 — Orkestracija servisnih instanci
+1. Aplikacija sa više servisnih instanci
+2. Servisne instance iza balansera
+3. Orkestracija servisnih instanci
+4. Željeno stanje sistema
+5. Uklanjanje neispravne instance iz saobraćaja
+6. Restart servisne instance
+7. Zamena servisne instance
+8. Ponovno uključivanje instance u saobraćaj
+9. Usmeravanje zahteva samo na ispravne instance
+Celina obrađuje oporavak računarskih resursa kao kontrolisani sled: otkrivanje, uklanjanje, restart ili zamena i vraćanje u saobraćaj.
+Celina 9 — Timeout, retry i circuit breaker
+1. [Placeholder: pojam će biti određen]
+2. Ponovno izvršavanje zahteva (retry)
+3. Prolazni otkazi
+4. Exponential backoff
+5. Jitter
+6. Retry bez backoff-a i jitter-a
+7. Retry storm
+8. Thundering herd
+9. Circuit breaker i sprečavanje lančanog otkaza
+Celina počinje pojedinačnim zahtevom, a završava ponašanjem velikog broja klijenata koji istovremeno pokušavaju da pristupe servisu u oporavku.
