@@ -13,7 +13,7 @@ Opservabilnost jeste svojstvo [[Distribuirani sistem|distribuiranog sistema]] ko
 
 U primarnom cloud kontekstu, mehanizam za kontrolisano izazivanje otkaza uspori upise na primarnom čvoru replicirane baze, pa [[Poslovni tok kroz više servisa i baza|poslovni tok]] sporo napreduje na koraku servisa B.
 
-[[Trag]] jednog izvršenja toka pokazuje da najveći deo trajanja tog koraka otpada na upis u bazu, ali ne dokazuje da isto važi za druga izvršenja. [[Metrika|Metrike]] primarnog čvora pokazuju da je u istom periodu poraslo prosečno trajanje upisa, ali ne i zašto. [[Log|Logovi]] [[Servisna instanca|servisnih instanci]] servisa B sadrže nove zapise o obrađenim zahtevima, što pokazuje da se procesi tih instanci izvršavaju, ali ne govori ništa o instancama čiji zapisi ne stižu.
+[[Trag]] jednog izvršenja toka pokazuje da najveći deo trajanja tog koraka otpada na upis u bazu, ali ne dokazuje da isto važi za druga izvršenja. [[Metrika trajanja odgovora|Metrika trajanja upisa]] primarnog čvora pokazuje da je u istom periodu poraslo prosečno trajanje upisa, ali ne i zašto. [[Log|Logovi]] [[Servisna instanca|servisnih instanci]] servisa B sadrže nove zapise o obrađenim zahtevima, što pokazuje da se procesi tih instanci izvršavaju, ali ne govori ništa o instancama čiji zapisi ne stižu.
 
 Zajedno, ovi podaci podržavaju zaključak da kašnjenje najverovatnije potiče od sporih upisa, a ne od [[Pad procesa|pada procesa]] instanci servisa B čiji zapisi stižu. Da instance beleže samo poruku da zahtev nije uspeo, sistem bi se ponašao isto, ali bi bio manje opservabilan, jer se iz takvih podataka ne bi moglo utvrditi na kom koraku nastaje kašnjenje.
 

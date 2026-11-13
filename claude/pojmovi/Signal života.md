@@ -19,6 +19,6 @@ Ako replika ne primi nijednu poruku tokom 1 s, ona ne može samo na osnovu toga 
 
 Signal života šalje sama komponenta, dok [[Provera zdravlja servisne instance|proveru zdravlja]] pokreće neko drugi, koji i ocenjuje njen ishod. Zato izostanak signala života govori samo da poruka nije stigla, a sadržaj provere može da se prilagodi onome što treba ispitati.
 
-Signal života pokazuje da se komponenta izvršava, a ne da ispravno obavlja svoju funkciju. Za razliku od [[Log|loga]] i [[Metrika|metrike]], on sam po sebi ne opisuje šta se u komponenti dešava, pa je njegov doprinos [[Opservabilnost|opservabilnosti]] ograničen.
+Signal života pokazuje da se komponenta izvršava, a ne da ispravno obavlja svoju funkciju. Za razliku od [[Log|loga]] i metrike, on sam po sebi ne opisuje šta se u komponenti dešava, pa je njegov doprinos [[Opservabilnost|opservabilnosti]] ograničen.
 
 Izostanak signala života je opažanje, a ne [[Detekcija otkaza|detekcija otkaza]]. Kraći [[Rok čekanja|rok čekanja]] omogućava brže reagovanje, ali češće proglašava spore komponente neispravnim, a duži rok odlaže otkrivanje stvarnog otkaza.

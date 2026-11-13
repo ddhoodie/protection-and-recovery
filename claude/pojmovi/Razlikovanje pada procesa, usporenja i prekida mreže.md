@@ -13,7 +13,7 @@ Razlikovanje pada procesa, usporenja i prekida mreže jeste postupak kojim se, u
 
 U primarnom cloud kontekstu, servis A ne dobije odgovor jedne [[Servisna instanca|servisne instance]] servisa B u okviru [[Rok čekanja|roka čekanja]]. Samo iz toga se ne može utvrditi šta se dogodilo, pa se porede druga opažanja:
 
-- Ako odgovori stižu, ali kasno, [[Metrika|metrika]] trajanja odgovora raste, a [[Log|log]] instance i dalje dobija nove zapise, to podržava usporavanje.
+- Ako odgovori stižu, ali kasno, [[Metrika trajanja odgovora|metrika trajanja odgovora]] raste, a [[Log|log]] instance i dalje dobija nove zapise, to podržava usporavanje.
 - Ako servis A ne može da dobije odgovor, a [[Provera zdravlja servisne instance|provera zdravlja]] koju izvodi balanser opterećenja i dalje uspeva, to podržava prekid mreže između servisa A i instance.
 - Ako ni servis A ni balanser ne dobijaju odgovor, a novi zapisi i vrednosti metrika prestanu da stižu, to podržava pad procesa.
 

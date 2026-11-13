@@ -32,6 +32,7 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - unutrašnje stanje sistema
 - čvor baze podataka
 - potvrda izmene
+- metrika
 
 ## Promene konvencija
 
@@ -61,9 +62,9 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - 2026-11-08: „Konzistentnost podataka“ označava svojstvo replicirane baze koje određuje koliko podaci vraćeni čitanjem sa bilo kog čvora mogu da zaostaju za izmenama koje je primarni čvor potvrdio. Obuhvata nivoe od jake konzistentnosti (linearizabilnost) do konačne konzistentnosti. Za „strong consistency“ koristi se „jaka“, a ne „stroga“ konzistentnost. Ne označava zadovoljenost pravila nad podacima (značenje „C“ iz ACID), niti usklađenost stanja poslovnog toka, za koju se koristi izraz „konzistentno stanje toka“.
 - 2026-11-08: „Dostupnost“ ostaje pretpostavljen pojam u opštem značenju. U belešci „CAP teorema“ i beleškama koje se na nju oslanjaju koristi se uže značenje iz teoreme: svaki čvor koji radi na svaki zahtev pre ili kasnije vrati odgovor koji nije greška. To uže značenje se navodi u samoj definiciji, a ne vodi se kao zaseban pojam.
 - 2026-11-08: „Potvrda izmene“ vodi se kao pretpostavljen pojam, u značenju odgovora kojim primarni čvor javlja servisnoj instanci da je izmena podataka uspešno izvršena i trajno sačuvana (commit). Potvrđena izmena je izmena za koju je taj odgovor poslat. Prijem izmene na replici nije potvrda izmene u ovom smislu.
+- 2026-11-13: Beleška „Metrika“ preimenovana je u „Metrika trajanja odgovora“, jer je opšti pojam metrike preširok za celinu 4, a mere oporavka iz celine 3 takođe mogu da se nazovu metrikama. Uži pojam odgovara primeru i naglasku celine da spor odgovor ne mora značiti pad komponente. „Metrika“ u opštem značenju vodi se kao pretpostavljen pojam.
 
 ## Otvorena pitanja
 
 - Razmotriti zasebne beleške za računski čvor, redundansu, zajednički uzrok otkaza, izolaciju otkaza, lančani otkaz, replikaciju, trajno stanje, sinhronu i asinhronu komunikaciju, otkaz komunikacionog kanala, jačinu zavisnosti servisa, ciklus zavisnosti, redosled oporavka zavisnih komponenti, izvršenje i stanje poslovnog toka, konzistentno stanje toka, uzrok otkaza (`fault`), neispravno stanje (`error`), način otkaza (`failure mode`), zastoj procesa, latenciju zahteva, cilj nivoa usluge (SLO) i modele `crash-stop`, `crash-recovery` i `fail-stop`.
-- Beleške celine 6 linkuju pojmove „Primarni čvor“, „Replika“, „Mrežna particija“ i „Detekcija otkaza“, koji još nemaju beleške. Treba ih definisati u celinama 4 i 5 pod istim nazivima.
 - Proveriti u originalu navode iz beleški „Split-brain“ (Kleppmann, DDIA, poglavlje 5) i „Izbor novog primarnog čvora“ (Raft). Ti tekstovi nisu pročitani, već samo sekundarni izvori.

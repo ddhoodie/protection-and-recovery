@@ -23,6 +23,6 @@ Detekcija se ocenjuje prema tome da li otkazi budu otkriveni, koliko često se i
 
 Pad procesa je teško pouzdano [[Razlikovanje pada procesa, usporenja i prekida mreže|razlikovati]] od veoma sporog procesa, kao što opisuje beleška [[Pad procesa]], pa greške detekcije nisu samo posledica loše izabranih vrednosti.
 
-Opažanja mogu da potiču iz [[Provera zdravlja servisne instance|provera zdravlja]], [[Signal života|signala života]], [[Metrika|metrika]], [[Log|logova]] i [[Trag|tragova]]. Veća [[Opservabilnost|opservabilnost]] poboljšava osnovu za odluku, ali ne garantuje da će odluka biti tačna.
+Opažanja mogu da potiču iz [[Provera zdravlja servisne instance|provera zdravlja]], [[Signal života|signala života]], metrika, [[Log|logova]] i [[Trag|tragova]]. Veća [[Opservabilnost|opservabilnost]] poboljšava osnovu za odluku, ali ne garantuje da će odluka biti tačna.
 
 Vreme potrebno za detekciju ulazi u ostvareno trajanje oporavka, a to trajanje se poredi sa [[Ciljno vreme oporavka|ciljnim vremenom oporavka]]. Ako funkcija stane u 12:00, a prekid bude primećen u 12:02, od cilja od 10 minuta već su potrošena dva.

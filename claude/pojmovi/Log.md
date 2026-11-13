@@ -21,6 +21,6 @@ Reč log se u praksi koristi i za ceo skup zapisa i za pojedinačan zapis. U ovo
 
 Log doprinosi [[Opservabilnost|opservabilnosti]] sistema samo ako su njegovi zapisi dostupni spolja i ako sadrže podatke iz kojih se može razumeti potrebno stanje. Samo postojanje loga to ne garantuje.
 
-[[Metrika]] beleži brojčane vrednosti kroz vreme, trenutne ili sažete za neki period, dok log čuva pojedinačne događaje. [[Trag]] prati put jednog zahteva kroz više servisa, dok zapis loga ne mora da pripada nijednom određenom zahtevu.
+Metrika beleži brojčane vrednosti kroz vreme, trenutne ili sažete za neki period, dok log čuva pojedinačne događaje. [[Trag]] prati put jednog zahteva kroz više servisa, dok zapis loga ne mora da pripada nijednom određenom zahtevu.
 
 Dnevnik transakcija baze podataka (transaction log, write-ahead log) razlikuje se od logova opisanih u ovoj belešci. On beleži izmene podataka, a sistemi kao što su PostgreSQL i SQL Server koriste ga za oporavak baze i za prenos izmena na replike.

@@ -21,6 +21,6 @@ Provera može da potvrdi samo ono što ispituje. Plitka provera utvrđuje da li 
 
 Duboka provera nosi suprotan rizik. Ako otkaže zavisnost koju koriste sve instance, sve one mogu istovremeno da ne prođu proveru, iako ih uklanjanje iz saobraćaja ili ponovno pokretanje neće popraviti. Mehanizam provere tada može da doprinese [[Širenje otkaza kroz graf zavisnosti|širenju otkaza]]. Zato se provera da li proces radi i provera da li instanca može da obavi svoj rad često izvode odvojeno.
 
-[[Metrika|Metrike]], [[Log|logovi]] i [[Trag|tragovi]] nastaju tokom redovnog rada sistema, dok se provera zdravlja izvršava namenski, radi ispitivanja instance. Njen ishod je još jedan izvor podataka koji doprinosi [[Opservabilnost|opservabilnosti]].
+Metrike, [[Log|logovi]] i [[Trag|tragovi]] nastaju tokom redovnog rada sistema, dok se provera zdravlja izvršava namenski, radi ispitivanja instance. Njen ishod je još jedan izvor podataka koji doprinosi [[Opservabilnost|opservabilnosti]].
 
 Neuspela provera nije isto što i [[Detekcija otkaza|detekcija otkaza]]. Ona je opažanje na osnovu kojeg se, često tek posle više uzastopnih neuspeha, donosi odluka o stanju instance.
