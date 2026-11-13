@@ -24,7 +24,7 @@ Iz ovih trajanja vidi se da je za ovaj zahtev upis trajao 2.100 ms od ukupno 2.4
 
 Opis jedne operacije u tragu naziva se raspon (span).
 
-Trag pokazuje kako je vreme raspoređeno unutar jednog zahteva, [[Metrika|metrika]] kako se neka veličina menja kroz vreme, a [[Log|log]] šta je komponenta zabeležila o pojedinačnim događajima. Zato metrika može da pokaže da su odgovori uopšte sporiji, a trag gde je vreme potrošeno u konkretnom zahtevu.
+Trag pokazuje kako je vreme raspoređeno unutar jednog zahteva, [[Metrika trajanja odgovora|metrika trajanja odgovora]] kako se trajanje menja kroz vreme, a [[Log|log]] šta je komponenta zabeležila o pojedinačnim događajima. Zato metrika može da pokaže da su odgovori uopšte sporiji, a trag gde je vreme potrošeno u konkretnom zahtevu.
 
 Trag jednog zahteva ne mora da predstavlja ponašanje celog sistema. Taj zahtev može biti netipičan, a sistemi za prikupljanje tragova mogu da čuvaju samo uzorak zahteva. Ako se čuva jedan od sto tragova, spor zahtev može da ostane nesačuvan, pa metrika pokazuje sporost, a dostupni trag brz zahtev.
 

@@ -34,7 +34,7 @@ II deo — Otkrivanje otkaza
 Celina 4 — Opservabilnost i detekcija otkaza — Nemanja Sovilj
 1. Opservabilnost
 2. Logovi
-3. Metrike
+3. Metrika trajanja odgovora
 4. Tragovi
 5. Provera zdravlja servisne instance (health check)
 6. Heartbeat
