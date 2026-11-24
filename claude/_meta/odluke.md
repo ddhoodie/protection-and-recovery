@@ -33,6 +33,8 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - čvor baze podataka
 - potvrda izmene
 - metrika
+- heš funkcija
+- rezervna kopija
 
 ## Promene konvencija
 
@@ -63,6 +65,8 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - 2026-11-08: „Dostupnost“ ostaje pretpostavljen pojam u opštem značenju. U belešci „CAP teorema“ i beleškama koje se na nju oslanjaju koristi se uže značenje iz teoreme: svaki čvor koji radi na svaki zahtev pre ili kasnije vrati odgovor koji nije greška. To uže značenje se navodi u samoj definiciji, a ne vodi se kao zaseban pojam.
 - 2026-11-08: „Potvrda izmene“ vodi se kao pretpostavljen pojam, u značenju odgovora kojim primarni čvor javlja servisnoj instanci da je izmena podataka uspešno izvršena i trajno sačuvana (commit). Potvrđena izmena je izmena za koju je taj odgovor poslat. Prijem izmene na replici nije potvrda izmene u ovom smislu.
 - 2026-11-13: Beleška „Metrika“ preimenovana je u „Metrika trajanja odgovora“, jer je opšti pojam metrike preširok za celinu 4, a mere oporavka iz celine 3 takođe mogu da se nazovu metrikama. Uži pojam odgovara primeru i naglasku celine da spor odgovor ne mora značiti pad komponente. „Metrika“ u opštem značenju vodi se kao pretpostavljen pojam.
+- 2026-11-23: „Particija“ označava podelu mreže, a „šard“ deo podataka, iako se u literaturi za šard koristi i izraz „partition“. Izuzetak je „particionisanje tabele“, ustaljen naziv za podelu tabele unutar jednog čvora. Za `sharding` koristi se „Šardovanje“, a engleski izraz ostaje alias.
+- 2026-11-23: U beleškama o šardovanju koristi se „čvor baze podataka“, jer šard ne mora biti repliciran.
 
 ## Otvorena pitanja
 
