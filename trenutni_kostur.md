@@ -68,8 +68,16 @@ Redosled tema prati kompletan životni ciklus promene primarnog čvora: detekcij
 Celina 7 — Multi-leader i leaderless replikacija
 8–12 pojmova da objasne multi-leader i leaderless replikaciju, sa akcentom na zaštitu i oporavak. Pojmove smišljaju prezenteri.
 IV deo — Particionisanje mreže i sharding
-Celina 8 — Network particionisanje i sharding
-Prezenteri celine 8 i celine 9 neka se dogovore kako dele temu. Zajedno pokrivaju network particionisanje i sharding, sa akcentom na zaštitu i oporavak. Pojmove smišljaju prezenteri.
+Celina 8 — Mrežno particionisanje - Marija Mandić
+1. Delimična mrežna particija
+2. Kvorum
+3. Zakup uloge primarnog čvora
+4. Režim rada tokom particije
+5. Neizvestan ishod zahteva
+6. Oporavak posle mrežne particije
+7. Ponovno priključivanje bivšeg primarnog čvora
+8. Ubrizgavanje mrežne particije
+Celina se oslanja na mrežnu particiju, CAP teoremu i kompromis konzistentnosti i dostupnosti iz celine 5 i prati put od nastanka particije, preko zaštite dok traje, do oporavka posle nje i provere tog oporavka. Sharding ostaje celini 9.
 Celina 9 — Network particionisanje i sharding
 Isti dogovor kao kod celine 8. Zajedno pokrivaju network particionisanje i sharding, sa akcentom na zaštitu i oporavak. Pojmove smišljaju prezenteri.
 V deo — Konzistentnost poslovnih tokova
