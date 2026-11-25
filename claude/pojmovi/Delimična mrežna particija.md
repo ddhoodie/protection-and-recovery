@@ -11,7 +11,7 @@ Delimična mrežna particija jeste [[Prekid mreže|prekid mreže]] pri kojem dve
 
 ## Primer
 
-U primarnom cloud kontekstu, primarni čvor P je u zoni 1, replika R1 u zoni 2, a replika R2 u zoni 3. Otkaže samo mrežna veza između zone 1 i zone 2. R1 više ne prima [[Signal života|signale života]] od čvora P i za nju je P otkazao. R2 i dalje prima signale života od čvora P i poruke od R1, pa za nju P radi ispravno. Servisne instance u zonama 1 i 3 normalno upisuju na P. Ako se odluka o [[Failover|failover-u]] donese samo na osnovu opažanja čvora R1, sistem pokreće failover iako je P dostupan većini komponenti.
+U primarnom cloud kontekstu, primarni čvor P je u zoni 1, replika R1 u zoni 2, a replika R2 u zoni 3. Veza između zone 1 i zone 2 prekida se u oba smera. R1 više ne prima [[Signal života|signale života]] od čvora P i za nju je P otkazao. R2 i dalje prima signale života od čvora P i poruke od R1, pa za nju P radi ispravno. Servisne instance u zonama 1 i 3 normalno upisuju na P. Ako se odluka o [[Failover|failover-u]] donese samo na osnovu opažanja čvora R1, sistem pokreće failover iako je P dostupan većini komponenti.
 
 ## Napomene
 

@@ -11,7 +11,7 @@ Zakup uloge primarnog čvora jeste vremenski ograničeno pravo čvora baze podat
 
 ## Primer
 
-U primarnom cloud kontekstu, primarni čvor P ima zakup od 10 sekundi i obnavlja ga svake 2 sekunde potvrdama od R1 i R2. U 12:00:00 [[Mrežna particija|mrežna particija]] odvoji zonu 1, u kojoj je P. Poslednja obnova je bila u 11:59:58, pa zakup ističe u 12:00:08. Do tada P prihvata upise servisnih instanci iz zone 1, a od 12:00:08 ih odbija, iako se proces baze i dalje izvršava i niko spolja nije zaustavio čvor. Na drugoj strani R1 i R2 čekaju da istekne najduži zakup koji je P mogao da ima, pa tek posle toga R1 postaje primarni čvor. U svakom trenutku najviše jedan čvor prihvata upise.
+U primarnom cloud kontekstu, primarni čvor P ima zakup od 10 sekundi i obnavlja ga svake 2 sekunde potvrdama od R1 i R2. U 12:00:00 [[Mrežna particija|mrežna particija]] odvoji zonu 1, u kojoj je P. Poslednja obnova je bila u 11:59:58, pa zakup ističe u 12:00:08. Do tada P prihvata upise servisnih instanci iz zone 1, a od 12:00:08 ih odbija, iako se proces baze i dalje izvršava i niko spolja nije zaustavio čvor. Na drugoj strani R1 i R2 čekaju da istekne najduži zakup koji je P mogao da ima, pa tek posle toga R1 postaje primarni čvor. Ako satovi čvorova ne odstupaju više od pretpostavljene granice i proces čvora P ne zastane duže od toga, u svakom trenutku najviše jedan čvor prihvata upise.
 
 ## Napomene
 

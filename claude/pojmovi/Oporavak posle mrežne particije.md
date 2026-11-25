@@ -7,7 +7,7 @@ izvor: "Eric Brewer, CAP Twelve Years Later: How the \"Rules\" Have Changed, IEE
 
 ## Definicija
 
-Oporavak posle mrežne particije jeste postupak koji počinje kada se komunikacija između grupa komponenti razdvojenih [[Mrežna particija|mrežnom particijom]] ponovo uspostavi, a završava se kada komponente svih grupa imaju usklađene uloge i podatke i kada su ispravljene posledice operacija izvršenih, odbijenih ili nezavršenih tokom particije.
+Oporavak posle mrežne particije jeste postupak koji počinje kada se komunikacija između grupa komponenti razdvojenih [[Mrežna particija|mrežnom particijom]] ponovo uspostavi i završava se kada svi čvorovi baze podataka priznaju isti primarni čvor, kada su izmene nastale na razdvojenim stranama odbačene, spojene ili ručno usklađene, kada je za svaki zahtev čiji je ishod ostao [[Neizvestan ishod zahteva|neizvestan]] utvrđeno da li je izvršen i kada je svaki tok zaustavljen tokom particije nastavljen ili poništen.
 
 ## Primer
 
