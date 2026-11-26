@@ -19,4 +19,4 @@ Srpski, latinica. Engleski termin u zagradi uz srpski.
 [[Cloud sistem za oporavak]]
 
 ## Sekundarni konteksti
-
+[[Cloud sistem u dve regije]]
