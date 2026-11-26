@@ -50,6 +50,7 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - 2026-10-21: „Razlika između RTO i RPO“ vodi se kao uzajamno razgraničenje beležaka „Ciljno vreme oporavka“ i „Ciljna tačka oporavka“, a ne kao zaseban pojam.
 - 2026-10-20: „Razlika između otkaza komponente i pada celog sistema“ vodi se kao veza između beležaka „Otkaz komponente distribuiranog sistema“ i „Potpuni otkaz sistema“, a ne kao zaseban pojam, da se definicije ne bi duplirale.
 2026-11-08: Beleška konteksta navodi samo strukturu sistema (komponente, njihove veze i mehanizme). Pojedinačna ponašanja servisa koja služe jednom primeru, na primer zašto servis B čita status toka, ostaju u tom primeru i ne upisuju se u kontekst, pod uslovom da mu ne protivreče.
+  - 2026-11-26: Korišćenje sekundarnog konteksta [[Cloud sistem u dve regije]] za pojmove Celine 7 odobreno je na PR review-u. Primeri iz primarnog konteksta su izuzetak kada on ne može da predstavi pojam, što je slučaj kod multi-leader i leaderless replikacije, jer primarni kontekst opisuje samo model u kome upise prima jedan čvor. U tim beleškama odeljak „Primer“ stoji u sekundarnom kontekstu i to izričito navodi, a primarni kontekst se pominje u napomenama radi poređenja. Kontekst je naveden u odeljku „Sekundarni konteksti“ u `_meta/konfiguracija.md`.
 
 ## Terminološke odluke
 
@@ -79,5 +80,3 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 
 - Razmotriti zasebne beleške za računski čvor, redundansu, zajednički uzrok otkaza, izolaciju otkaza, lančani otkaz, replikaciju, trajno stanje, sinhronu i asinhronu komunikaciju, otkaz komunikacionog kanala, jačinu zavisnosti servisa, ciklus zavisnosti, redosled oporavka zavisnih komponenti, izvršenje i stanje poslovnog toka, konzistentno stanje toka, uzrok otkaza (`fault`), neispravno stanje (`error`), način otkaza (`failure mode`), zastoj procesa, latenciju zahteva, cilj nivoa usluge (SLO) i modele `crash-stop`, `crash-recovery` i `fail-stop`.
 - Proveriti u originalu navode iz beleški „Split-brain“ (Kleppmann, DDIA, poglavlje 5) i „Izbor novog primarnog čvora“ (Raft). Ti tekstovi nisu pročitani, već samo sekundarni izvori.
-- Sekundarni kontekst „Cloud sistem u dve regije“ nije naveden u odeljku „Sekundarni konteksti“ u `_meta/konfiguracija.md`. Izmena konfiguracije traži dogovor celog tima.
-- Odstupanje od pravila da je primarni primer u primarnom kontekstu (vidi odluku od 2026-11-22) čeka potvrdu urednika. Ako ga urednik ne prihvati, primeri iz Celine 7 se prepravljaju tako da primarni kontekst stoji u odeljku „Primer“.
