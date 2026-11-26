@@ -33,6 +33,8 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - čvor baze podataka
 - potvrda izmene
 - metrika
+- heš funkcija
+- rezervna kopija
 - zona dostupnosti
 
 ## Promene konvencija
@@ -49,8 +51,8 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - 2026-10-21: Student trajno i unapred prihvata prvi predlog za svaki budući pojam. Posle provere izvora, tematskog obima, razgraničenja i slabosti, beleška se odmah upisuje bez dodatnog pitanja za potvrdu. Odluka zamenjuje istovetnu odluku od 2026-10-20 i važi dok je student izričito ne promeni.
 - 2026-10-21: „Razlika između RTO i RPO“ vodi se kao uzajamno razgraničenje beležaka „Ciljno vreme oporavka“ i „Ciljna tačka oporavka“, a ne kao zaseban pojam.
 - 2026-10-20: „Razlika između otkaza komponente i pada celog sistema“ vodi se kao veza između beležaka „Otkaz komponente distribuiranog sistema“ i „Potpuni otkaz sistema“, a ne kao zaseban pojam, da se definicije ne bi duplirale.
-2026-11-08: Beleška konteksta navodi samo strukturu sistema (komponente, njihove veze i mehanizme). Pojedinačna ponašanja servisa koja služe jednom primeru, na primer zašto servis B čita status toka, ostaju u tom primeru i ne upisuju se u kontekst, pod uslovom da mu ne protivreče.
-  - 2026-11-26: Korišćenje sekundarnog konteksta [[Cloud sistem u dve regije]] za pojmove Celine 7 odobreno je na PR review-u. Primeri iz primarnog konteksta su izuzetak kada on ne može da predstavi pojam, što je slučaj kod multi-leader i leaderless replikacije, jer primarni kontekst opisuje samo model u kome upise prima jedan čvor. U tim beleškama odeljak „Primer“ stoji u sekundarnom kontekstu i to izričito navodi, a primarni kontekst se pominje u napomenama radi poređenja. Kontekst je naveden u odeljku „Sekundarni konteksti“ u `_meta/konfiguracija.md`.
+- 2026-11-08: Beleška konteksta navodi samo strukturu sistema (komponente, njihove veze i mehanizme). Pojedinačna ponašanja servisa koja služe jednom primeru, na primer zašto servis B čita status toka, ostaju u tom primeru i ne upisuju se u kontekst, pod uslovom da mu ne protivreče.
+- 2026-11-26: Korišćenje sekundarnog konteksta [[Cloud sistem u dve regije]] za pojmove Celine 7 odobreno je na PR review-u. Primeri iz primarnog konteksta su izuzetak kada on ne može da predstavi pojam, što je slučaj kod multi-leader i leaderless replikacije, jer primarni kontekst opisuje samo model u kome upise prima jedan čvor. U tim beleškama odeljak „Primer“ stoji u sekundarnom kontekstu i to izričito navodi, a primarni kontekst se pominje u napomenama radi poređenja. Kontekst je naveden u odeljku „Sekundarni konteksti“ u `_meta/konfiguracija.md`.
 
 ## Terminološke odluke
 
@@ -71,6 +73,8 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - 2026-11-08: „Dostupnost“ ostaje pretpostavljen pojam u opštem značenju. U belešci „CAP teorema“ i beleškama koje se na nju oslanjaju koristi se uže značenje iz teoreme: svaki čvor koji radi na svaki zahtev pre ili kasnije vrati odgovor koji nije greška. To uže značenje se navodi u samoj definiciji, a ne vodi se kao zaseban pojam.
 - 2026-11-08: „Potvrda izmene“ vodi se kao pretpostavljen pojam, u značenju odgovora kojim primarni čvor javlja servisnoj instanci da je izmena podataka uspešno izvršena i trajno sačuvana (commit). Potvrđena izmena je izmena za koju je taj odgovor poslat. Prijem izmene na replici nije potvrda izmene u ovom smislu.
 - 2026-11-13: Beleška „Metrika“ preimenovana je u „Metrika trajanja odgovora“, jer je opšti pojam metrike preširok za celinu 4, a mere oporavka iz celine 3 takođe mogu da se nazovu metrikama. Uži pojam odgovara primeru i naglasku celine da spor odgovor ne mora značiti pad komponente. „Metrika“ u opštem značenju vodi se kao pretpostavljen pojam.
+- 2026-11-23: „Particija“ označava podelu mreže, a „šard“ deo podataka, iako se u literaturi za šard koristi i izraz „partition“. Izuzetak je „particionisanje tabele“, ustaljen naziv za podelu tabele unutar jednog čvora. Za `sharding` koristi se „Šardovanje“, a engleski izraz ostaje alias.
+- 2026-11-23: U beleškama o šardovanju koristi se „čvor baze podataka“, jer šard ne mora biti repliciran.
 - Predlog Celine 7, nije usvojeno: U beleškama o multi-leader i leaderless replikaciji za čvorove koji primaju upise koristi se „čvor replicirane baze“, a ne „primarni čvor“ ni „replika“, jer se te dve beleške odnose na model sa jednim čvorom koji prima upise.
 - Predlog Celine 7, nije usvojeno: „Multi-leader replikacija“, „Leaderless replikacija“, „Sloppy kvorum“, „Read repair“ i „Anti-entropy“ zadržavaju engleski izraz u nazivu, jer srpski prevodi nisu ustaljeni, kao kod termina „Failover“ i „Split-brain“.
 - Predlog Celine 7, nije usvojeno: „Kvorum“ je jedna beleška sa dva oblika istog pojma: većinski kvorum (primarni kontekst, izbor novog primarnog čvora) i kvorum za čitanje i upis (w, r, sekundarni kontekst, leaderless replikacija). Oblici se razlikuju u odeljcima „Primer“ i „Napomene“, a beleške Celine 7 linkuju na odeljak „O kvorumu za čitanje i upis“.

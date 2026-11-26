@@ -78,8 +78,18 @@ Celina 8 — Mrežno particionisanje - Marija Mandić
 7. Ponovno priključivanje bivšeg primarnog čvora
 8. Ubrizgavanje mrežne particije
 Celina se oslanja na mrežnu particiju, CAP teoremu i kompromis konzistentnosti i dostupnosti iz celine 5 i prati put od nastanka particije, preko zaštite dok traje, do oporavka posle nje i provere tog oporavka. Sharding ostaje celini 9.
-Celina 9 — Network particionisanje i sharding
-Isti dogovor kao kod celine 8. Zajedno pokrivaju network particionisanje i sharding, sa akcentom na zaštitu i oporavak. Pojmove smišljaju prezenteri.
+Celina 9 — Šardovanje - Aleksa Vukomanović
+1. Šard
+2. Šardovanje
+3. Ključ šardovanja
+4. Raspodela podataka po šardovima
+5. Mapa šardova
+6. Nesrazmerno opterećen šard
+7. Rebalansiranje šardova
+8. Replikacija šarda
+9. Otkaz šarda
+10. Oporavak šarda
+Celina pokazuje kako se podaci dele i usmeravaju, a zatim kako podela utiče na otkaz i oporavak baze.
 V deo — Konzistentnost poslovnih tokova
 Celina 10 — Saga i kompenzacione transakcije
 1. Poslovni tok posle delimičnog otkaza
@@ -125,7 +135,7 @@ Ukupna struktura prati klasičan didaktički napredak:
 6. promena primarnog čvora;
 7. multi-leader i leaderless replikacija, sa akcentom na zaštitu i oporavak;
 8. network particionisanje i sharding, deo po dogovoru sa celinom 9;
-9. network particionisanje i sharding, deo po dogovoru sa celinom 8;
+9. šardovanje, sa akcentom na zaštitu i oporavak;
 10. oporavak distribuiranih transakcija;
 11. pouzdano izvršavanje tokova;
 12. oporavak i testiranje sistema kao celine.
