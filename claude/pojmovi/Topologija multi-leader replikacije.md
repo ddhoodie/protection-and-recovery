@@ -17,7 +17,7 @@ U sekundarnom kontekstu [[Cloud sistem u dve regije]], u modelu u kome sva četi
 
 Knjiga navodi tri uobičajene topologije: kružnu, zvezdastu (star), u kojoj jedan korenski čvor prosleđuje izmene svim ostalim čvorovima, i topologiju svaki sa svakim. Zvezdasta se može uopštiti u stablo.
 
-U kružnoj i zvezdastoj topologiji izmena prolazi kroz više čvorova, pa čvor mora da prosleđuje i izmene koje je primio od drugih. Da se izbegnu beskonačne petlje, izmena nosi identifikator čvora kroz koji je prošla, a čvor ignoriše izmenu koja nosi njegov identifikator. Dokumentacija MariaDB-a to opisuje za prsten: izmena koju je čvor napravio na kraju se vrati do njega, i on je prepoznaje i odbacuje.
+U kružnoj topologiji izmena prolazi kroz više čvorova, pa svaki čvor prosleđuje i izmene koje je primio od prethodnog. U zvezdastoj topologiji tu ulogu ima korenski čvor: on prosleđuje izmene svim ostalim čvorovima, dok ostali čvorovi ne moraju da ih prosleđuju jedni drugima. Da se izbegnu beskonačne petlje, izmena nosi identifikator čvora kroz koji je prošla, a čvor ignoriše izmenu koja nosi njegov identifikator. Dokumentacija MariaDB-a to opisuje za prsten: izmena koju je čvor napravio na kraju se vrati do njega, i on je prepoznaje i odbacuje.
 
 Otkaz jednog čvora u kružnoj ili zvezdastoj topologiji prekida tok izmena između ostalih čvorova. Rekonfiguracija koja zaobilazi otkazali čvor u većini sistema se radi ručno, a pre nje otkaz mora da bude otkriven ([[Detekcija otkaza|detekcijom otkaza]]). Kod prekida veze između dva čvora u prstenu replikacija staje i, prema dokumentaciji MariaDB-a, sama se nastavlja kada se veza vrati, a čvorovi u međuvremenu opslužuju klijente lokalno.
 
