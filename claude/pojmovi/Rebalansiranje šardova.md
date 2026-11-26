@@ -17,6 +17,8 @@ U primarnom cloud kontekstu, čvor P3 nema dovoljno prostora, pa se šard S3 pre
 
 Rebalansiranje nije [[Failover|failover]]: failover menja ulogu čvora koji već ima kopiju, a rebalansiranje premešta podatke.
 
+Pre izmene [[Mapa šardova|mape šardova]] novi čvor mora da dobije i postojeće podatke i izmene nastale tokom kopiranja. Mapa se menja tek kada je potvrđeno da se podaci na novom čvoru poklapaju sa podacima na starom.
+
 Ako se šard određuje ostatkom pri deljenju heša brojem šardova, prelazak sa tri na četiri šarda premešta oko 75% ključeva. Zato se često unapred pravi više šardova nego čvorova, pa se premeštaju celi šardovi.
 
 Automatsko rebalansiranje je opasno uz automatsku [[Detekcija otkaza|detekciju otkaza]]: usporen čvor se proglasi neispravnim, a premeštanje njegovih podataka dodatno optereti i njega i ostale čvorove.
