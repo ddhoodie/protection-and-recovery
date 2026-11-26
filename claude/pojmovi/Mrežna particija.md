@@ -15,6 +15,6 @@ U primarnom cloud kontekstu, mrežna particija podeli sistem u dve grupe. Jednu 
 
 ## Napomene
 
-Svaka mrežna particija jeste [[Prekid mreže|prekid mreže]], ali svaki prekid mreže nije particija. Ako otkaže jedan komunikacioni put, a komponente i dalje razmenjuju poruke drugim putem, sistem nije podeljen u grupe.
+Svaka mrežna particija jeste [[Prekid mreže|prekid mreže]], ali svaki prekid mreže nije particija. Ako otkaže jedan komunikacioni put, a komponente i dalje razmenjuju poruke drugim putem, sistem nije podeljen u grupe. Slučaj u kojem dve grupe ne mogu da komuniciraju, a neka komponenta vidi obe, opisuje [[Delimična mrežna particija|delimična mrežna particija]].
 
 Particija je opasna zato što komponente u svakoj grupi nastavljaju da rade, a komponentama iz druge grupe izgledaju kao da su otkazale. Posledice po repliciranu bazu opisuju [[CAP teorema]] i [[Kompromis konzistentnosti i dostupnosti tokom mrežne particije|kompromis konzistentnosti i dostupnosti]].

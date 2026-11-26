@@ -33,9 +33,13 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - čvor baze podataka
 - potvrda izmene
 - metrika
+- zona dostupnosti
 
 ## Promene konvencija
 
+- 2026-11-23: Celina 8 obrađuje mrežno particionisanje, a sharding ostaje celini 9. Beleške „Mrežna particija“, „CAP teorema“ i „Kompromis konzistentnosti i dostupnosti tokom mrežne particije“ iz celine 5 se ne ponavljaju, već se linkuju. Celina 8 pokriva zaštitu tokom particije i oporavak posle nje.
+- 2026-11-23: „Izlečenje mrežne particije“ ne vodi se kao zaseban pojam, već je spojen sa beleškom „Oporavak posle mrežne particije“ kao njen početni trenutak. Izraz ostaje alias.
+- 2026-11-23: „Kvorum“ definiše celina 8, dovoljno opšte da obuhvati i većinski kvorum za izbor primarnog čvora i kvorume čitanja i upisa kod replikacije bez primarnog čvora iz celine 7. Celina 7 ga linkuje i ne pravi zasebnu belešku.
 - 2026-11-07: „Razlikovanje pada primarnog čvora od njegovog usporenja“ spojeno je sa beleškom „Otkrivanje otkaza primarnog čvora“, jer je uži slučaj pojma „Razlikovanje pada procesa, usporenja i prekida mreže“ iz celine 4. U beleški ostaje samo ono što je specifično za primarni čvor. Na oslobođeno mesto u kosturu celine 6 dolazi „Failover“ kao prvi pojam.
 
 - 2026-10-31: „Razlikovanje pada procesa, usporenja i prekida mreže“ vodi se kao zaseban pojam, a ne kao veza između beležaka „Pad procesa“, „Usporavanje servisa“ i „Prekid mreže“, jer opisuje postupak procene na osnovu više opažanja, a ne razliku između definicija.
@@ -49,6 +53,9 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 
 ## Terminološke odluke
 
+- 2026-11-23: „Delimična mrežna particija“ nije podvrsta pojma „Mrežna particija“ u smislu ove baze, jer komponente nisu podeljene u međusobno potpuno odsečene grupe. Naziv se zadržava jer je ustaljen u literaturi (partial network partition), a razgraničenje je u napomenama obe beleške.
+- 2026-11-23: Za `leader lease` koristi se naziv „Zakup uloge primarnog čvora“, jer je glavni termin u bazi srpski. Izraz „lease“ ostaje alias.
+- 2026-11-23: „Režim rada tokom particije“ je uži pojam od degradiranog rada sistema. Degradirani rad (pominje se u beleški „Širenje otkaza kroz graf zavisnosti“) i dalje nema belešku.
 - 2026-11-09: RTO je ciljna granica, a ne vreme koje se „troši“ ili u koje nešto „ulazi“. Vreme detekcije, izbora ili fencing-a ulazi u ostvareno trajanje oporavka, a to trajanje se poredi sa RTO-om. Primenjeno u beleškama celine 6 po uzoru na belešku „Detekcija otkaza“.
 
 - 2026-10-31: „Dva istovremena primarna čvora“ označava stanje uloga, a „Split-brain“ stanje u kojem više čvorova nezavisno prihvata upise, pa se podaci razilaze. U literaturi se ovi izrazi često koriste kao sinonimi.
