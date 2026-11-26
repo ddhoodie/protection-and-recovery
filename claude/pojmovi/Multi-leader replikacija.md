@@ -13,7 +13,7 @@ Multi-leader replikacija jeste način replikacije u kome više [[Čvor replicira
 
 U sekundarnom kontekstu [[Cloud sistem u dve regije]], u modelu u kome sva četiri čvora primaju upise, servisna instanca servisa A u Regiji 1 upisuje status [[Poslovni tok kroz više servisa i baza|poslovnog toka]] na N1, a instanca servisa B u Regiji 2 upisuje status na N3. Svaki od ta dva čvora upis izvršava lokalno i prosleđuje izmenu ostalim čvorovima.
 
-Otkaz čvora N1 ne zaustavlja upis u Regiji 1, jer i N2 prima upise. Kada Regija 1 otkaže u celini, instance u Regiji 2 i dalje upisuju na N3 i N4, bez [[Failover|failover-a]] i bez promene uloga čvorova. Kada se Regija 1 vrati, izmene primljene u Regiji 2 prenose se u nju. Izmene koje su čvorovi N1 i N2 primili, a nisu stigli da ih pošalju u Regiju 2, tamo nedostaju dok se Regija 1 ne vrati. Ako se ne vrati, izgubljene su, a taj gubitak se poredi sa [[Ciljna tačka oporavka|ciljnom tačkom oporavka]].
+Otkaz čvora N1 ne zaustavlja upis u Regiji 1, jer i N2 prima upise. Kada Regija 1 otkaže u celini, instance u Regiji 2 i dalje upisuju na N3 i N4, bez [[Failover|failover-a]] i bez promene uloga čvorova. Kada se Regija 1 vrati, izmene primljene u Regiji 2 prenose se u nju. Izmene koje su čvorovi N1 i N2 primili, a nisu stigli da ih pošalju u Regiju 2, tamo nedostaju dok se Regija 1 ne vrati. Ako se ne vrati i ne postoji druga kopija tih izmena niti drugi način da se obnove, izgubljene su, a taj gubitak se poredi sa [[Ciljna tačka oporavka|ciljnom tačkom oporavka]].
 
 ## Napomene
 
