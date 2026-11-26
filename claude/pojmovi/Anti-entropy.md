@@ -15,7 +15,7 @@ U sekundarnom kontekstu [[Cloud sistem u dve regije]], u modelu bez čvora koji 
 
 ## Napomene
 
-Razlika od [[Read repair|read repair-a]]: read repair se pokreće čitanjem i popravlja samo ono što je pročitano, a Anti-entropy radi stalno i obuhvata sve podatke. Za razliku od toka izmena u replikaciji sa primarnog čvora, ne kopira upise nekim određenim redosledom, a kopiranje može da kasni.
+Razlika od [[Read repair|read repair-a]]: read repair se pokreće čitanjem i popravlja samo ono što je pročitano, a Anti-entropy se izvodi nezavisno od čitanja, periodično ili u pozadini, zavisno od sistema, i obuhvata sve podatke. Za razliku od toka izmena u replikaciji sa primarnog čvora, ne kopira upise nekim određenim redosledom, a kopiranje može da kasni.
 
 Rad o Dynamo-u i dokumentacija Cassandra-e za poređenje podataka koriste Merkleova stabla, hash stabla u kojima se grane proveravaju nezavisno, da bi se smanjila količina podataka koja se prenosi. Rad o Dynamo-u Anti-entropy navodi kao način oporavka od trajnih otkaza. Cassandra dokumentacija navodi da read repair i hinted handoff rade koliko je moguće (best-effort), a da eventualno izjednačavanje replika obezbeđuje anti-entropy repair, i to samo ako se redovno pokreće: Cassandra ga ne pokreće sama, već operator. Rad o Dynamo-u i Kleppmann ne iznose takvu garanciju. U radu o Dynamo-u izvodi ga sam sistem u pozadini.
 
